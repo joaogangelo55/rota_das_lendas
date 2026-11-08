@@ -1,0 +1,7 @@
+AMBIENTE DE VALIDAÇÃO — 04/09/2026
+Node: v22.16.0
+Python: Python 3.13.5
+
+Teste da base: EXECUTADO COM SUCESSO
+Build React/Vite: NÃO EXECUTADO neste ambiente, pois o acesso ao registry npm expirou durante npm install/npm ping.
+A validação de build deve ser repetida localmente com: npm install && npm run check

@@ -1,0 +1,514 @@
+{
+  "metadata": {
+    "versao": "1.0",
+    "descricao": "Fonte editorial única para narrativas, textos históricos e imagens da Identidade Cultural.",
+    "regra": "Editar este arquivo e sincronizar posteriormente com dados.json e dados.geojson.",
+    "total_registros": 42
+  },
+  "registros": {
+    "PH-001": {
+      "titulo": "Igreja de Nosso Senhor do Bonfim",
+      "categoria": "patrimonio",
+      "texto_historico": "Erguida no século XVIII, a Igreja de Nosso Senhor do Bonfim integra o conjunto religioso do centro histórico de Aracati. O templo apresenta características associadas ao barroco tardio e conserva vínculos com antigas práticas de devoção e com a memória de sua irmandade.\n\nAlém do valor arquitetônico, a igreja permanece como referência religiosa e cultural da cidade. Em 2022, o edifício foi objeto de ação de restauração documentada pelo IPHAN, reforçando a importância de sua preservação para a paisagem histórica de Aracati.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-001.jpg",
+        "alt": "Imagem de Igreja de Nosso Senhor do Bonfim, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-002": {
+      "titulo": "Casa de Câmara e Cadeia de Aracati",
+      "categoria": "patrimonio",
+      "texto_historico": "Construída no século XVIII, a Casa de Câmara e Cadeia reuniu funções administrativas, políticas, judiciais e prisionais de Aracati. A edificação representa a organização do poder municipal no período colonial e constitui uma das referências da arquitetura civil pública do centro histórico.\n\nAo longo do tempo, o prédio passou por modificações, mas preservou sua importância na paisagem urbana. O bem possui tombamento federal individual, registrado no processo 0879-T-73, e permanece como testemunho material da história política, administrativa e social da antiga vila.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-003": {
+      "titulo": "Casa/Sobrados associados a Adolfo Caminha",
+      "categoria": "patrimonio",
+      "texto_historico": "Este imóvel do centro histórico está associado à memória de Adolfo Caminha, escritor naturalista nascido em Aracati em 1867 e reconhecido pela literatura brasileira. Registros institucionais relacionam o local à infância do escritor, tornando-o uma referência da memória literária aracatiense.\n\nAlém da relação biográfica, a edificação integra a paisagem formada pelos antigos sobrados da atual Avenida Coronel Alexanzito. O ponto articula, portanto, arquitetura civil, história urbana e patrimônio literário, aproximando a trajetória de Adolfo Caminha do território onde viveu seus primeiros anos.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-003.jpg",
+        "alt": "Imagem de Casa/Sobrados associados a Adolfo Caminha, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-004": {
+      "titulo": "EEF Prof. Régis Bernardo / imóvel associado à Confederação do Equador",
+      "categoria": "patrimonio",
+      "texto_historico": "O imóvel atualmente ocupado pela EEF Prof. Régis Bernardo de Souza é utilizado neste projeto como referência territorial associada à memória da Confederação do Equador em Aracati. O movimento de 1824 contestou o centralismo do Império e mobilizou diferentes localidades do Nordeste em defesa de propostas republicanas e federalistas.\n\nPesquisas acadêmicas associam esse setor do centro histórico às articulações políticas daquele período. Por cautela documental, o ponto é apresentado como lugar de memória relacionado ao movimento, sem afirmar que a configuração atual da edificação corresponde integralmente à existente em 1824.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-004.jpg",
+        "alt": "Imagem de EEF Prof. Régis Bernardo / imóvel associado à Confederação do Equador, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-005": {
+      "titulo": "Sobrado do Barão de Aracati / Museu Jaguaribano",
+      "categoria": "patrimonio",
+      "texto_historico": "O sobrado que abriga o Museu Jaguaribano é uma importante referência da arquitetura civil e da memória cultural de Aracati. Criado em 1968, o museu reúne objetos e acervos relacionados à história, aos modos de vida, à religiosidade e às atividades econômicas da região jaguaribana.\n\nInstalado em uma edificação histórica da Rua Coronel Alexanzito, o equipamento aproxima patrimônio arquitetônico e preservação da memória. Sua atuação contribui para conservar e difundir documentos, objetos e referências culturais vinculadas à trajetória histórica de Aracati e do Vale do Jaguaribe.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-005.jpg",
+        "alt": "Imagem de Sobrado do Barão de Aracati / Museu Jaguaribano, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-006": {
+      "titulo": "Cruz das Almas",
+      "categoria": "patrimonio",
+      "texto_historico": "A Cruz das Almas é um antigo marco urbano e religioso situado na entrada sul do núcleo histórico de Aracati. Formada por uma cruz sobre pedestal de alvenaria, a referência está relacionada à formação da vila e permanece integrada à memória devocional da população.\n\nAlém de sua presença histórica na paisagem urbana, a Praça Cruz das Almas foi incluída, em 2024, na Rota do Turismo Religioso do Estado do Ceará. Esse reconhecimento reforça seu papel como lugar de fé, memória e identidade cultural na cidade.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-006.jpg",
+        "alt": "Imagem de Cruz das Almas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-007": {
+      "titulo": "Igreja Matriz de Nossa Senhora do Rosário",
+      "categoria": "patrimonio",
+      "texto_historico": "A Igreja Matriz de Nossa Senhora do Rosário desenvolveu-se a partir de uma capela primitiva do século XVIII. Sua fachada foi concluída em 1785, enquanto diferentes etapas construtivas e intervenções se prolongaram pelo século XIX.\n\nO conjunto reúne arquitetura religiosa e arte sacra, combinando elementos barrocos com transformações posteriores. A Matriz possui tombamento federal individual, registrado no processo 0550-T-56 em 1957, e permanece como uma das principais referências históricas, religiosas e visuais do centro de Aracati.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-008": {
+      "titulo": "Igreja de Nossa Senhora do Rosário dos Homens Pretos",
+      "categoria": "patrimonio",
+      "texto_historico": "Erguida no final do século XVIII e vinculada à Irmandade dos Homens Pretos, a Igreja de Nossa Senhora do Rosário dos Homens Pretos é uma importante referência da presença e da memória afro-brasileira em Aracati.\n\nO templo, associado a uma expressão barroca popular, integra o conjunto histórico da cidade e relaciona devoção, sociabilidade e resistência cultural de populações negras. Sua permanência na paisagem urbana e as ações contemporâneas de preservação reforçam sua relevância histórica e simbólica.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-008.jpg",
+        "alt": "Imagem de Igreja de Nossa Senhora do Rosário dos Homens Pretos, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-009": {
+      "titulo": "Igreja Nossa Senhora dos Prazeres",
+      "categoria": "patrimonio",
+      "texto_historico": "Construída no século XVIII pela Irmandade dos Homens Pardos Livres, a Igreja de Nossa Senhora dos Prazeres integra o conjunto religioso do centro histórico de Aracati.\n\nO templo apresenta linguagem colonial simples e conserva elementos de arte sacra, entre eles trabalhos em madeira. Sua história evidencia a organização das irmandades religiosas e formas de sociabilidade presentes na cidade colonial. Atualmente, permanece como referência de devoção e como componente da paisagem cultural histórica de Aracati.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-009.jpg",
+        "alt": "Imagem de Igreja Nossa Senhora dos Prazeres, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-010": {
+      "titulo": "Biblioteca Pública Municipal Monsenhor Bruno",
+      "categoria": "patrimonio",
+      "texto_historico": "A Biblioteca Pública Municipal Monsenhor Bruno é um equipamento cultural dedicado à leitura, à pesquisa e ao acesso ao conhecimento em Aracati. Situada no centro histórico, reúne acervo bibliográfico e oferece espaços voltados ao estudo e às atividades culturais.\n\nSua presença no núcleo histórico demonstra que a preservação urbana também pode ser articulada a usos contemporâneos. Assim, a biblioteca contribui para manter o centro de Aracati como espaço vivo de educação, convivência, memória e difusão cultural.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-010.jpg",
+        "alt": "Imagem de Biblioteca Pública Municipal Monsenhor Bruno, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-011": {
+      "titulo": "Fábrica de Tecidos Santa Tereza",
+      "categoria": "patrimonio",
+      "texto_historico": "Inaugurada em 1893, a Fábrica de Tecidos Santa Tereza marcou o processo de industrialização de Aracati e tornou-se uma importante referência da memória do trabalho na cidade.\n\nA atividade fabril gerou empregos e participou das transformações econômicas e sociais ocorridas entre o final do século XIX e o século XX. Mesmo após o encerramento das atividades industriais, a antiga fábrica permanece como testemunho material das mudanças tecnológicas, produtivas e trabalhistas que integraram Aracati ao processo de industrialização cearense.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-011.jpg",
+        "alt": "Imagem de Fábrica de Tecidos Santa Tereza, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-012": {
+      "titulo": "Teatro Francisca Clotilde",
+      "categoria": "patrimonio",
+      "texto_historico": "O Teatro Francisca Clotilde ocupa uma edificação histórica do centro de Aracati e representa a continuidade de usos culturais em um imóvel de longa trajetória urbana.\n\nO prédio foi adaptado, ao longo do tempo, para atividades artísticas e culturais e passou por ações de restauro e pesquisa arqueológica acompanhadas pelo IPHAN. Atualmente, o teatro funciona como espaço de apresentações e manifestações culturais, articulando patrimônio arquitetônico, memória urbana, arqueologia e produção artística contemporânea.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-012.jpg",
+        "alt": "Imagem de Teatro Francisca Clotilde, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-013": {
+      "titulo": "Casa Ponciano",
+      "categoria": "patrimonio",
+      "texto_historico": "A Casa Ponciano é uma referência da memória comercial e das formas de sociabilidade desenvolvidas em Aracati ao longo do século XX. O estabelecimento está associado ao comerciante José Ponciano da Costa e tornou-se conhecido pela comercialização de secos e molhados.\n\nA permanência da atividade e de sua memória familiar ajuda a compreender como pequenos e tradicionais estabelecimentos comerciais também participam da construção da paisagem cultural. O ponto registra práticas de trabalho, encontro e circulação cotidiana no centro histórico aracatiense.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-013.jpg",
+        "alt": "Imagem de Casa Ponciano, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-014": {
+      "titulo": "Mercado Público (Mercado Velho)",
+      "categoria": "patrimonio",
+      "texto_historico": "Na segunda metade do século XIX, o Mercado Público consolidou-se como importante espaço de abastecimento e comércio de Aracati. Conhecido também como Mercado Velho, reuniu comerciantes, feirantes e moradores, tornando-se lugar de circulação de mercadorias e de sociabilidade cotidiana.\n\nSua arquitetura e sua localização no núcleo histórico registram a importância econômica exercida pela cidade e as transformações do comércio urbano. O mercado permanece como referência da memória do trabalho, do abastecimento e dos encontros sociais aracatienses.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-014.jpg",
+        "alt": "Imagem de Mercado Público (Mercado Velho), em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-015": {
+      "titulo": "Oratório/Capela do Bom Jesus dos Navegantes",
+      "categoria": "patrimonio",
+      "texto_historico": "O Oratório do Bom Jesus dos Navegantes remonta ao início do século XIX e está relacionado à devoção de pescadores e navegantes. De pequenas dimensões e linguagem colonial simples, o espaço expressa a relação histórica entre Aracati, a navegação e a religiosidade popular.\n\nRegistros locais indicam que o oratório foi reconstruído após um incêndio ocorrido no início do século XX. Sua permanência no centro histórico preserva uma memória devocional associada às águas, ao trabalho e aos deslocamentos de pessoas que dependiam da navegação.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-015.jpg",
+        "alt": "Imagem de Oratório/Capela do Bom Jesus dos Navegantes, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "PH-016": {
+      "titulo": "Espaço das Artes (sobrado histórico)",
+      "categoria": "patrimonio",
+      "texto_historico": "O Espaço das Artes funciona em um sobrado histórico do centro de Aracati e representa um uso cultural contemporâneo de uma edificação antiga. O equipamento foi criado em 2015 e reinaugurado em 2020, recebendo exposições, oficinas, cursos e outros eventos culturais.\n\nO imóvel possui trajetória associada a diferentes famílias e personagens da história local. Durante intervenções de restauração também foram identificadas pinturas murais. O espaço combina, assim, preservação arquitetônica, memória urbana e produção cultural contemporânea.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-016.jpg",
+        "alt": "Imagem de Espaço das Artes (sobrado histórico), em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-001": {
+      "titulo": "O Baile de Carnaval",
+      "categoria": "lenda",
+      "narrativa": "Segundo a narrativa registrada por Antero Pereira Filho, Anahí vivia a expectativa de um casamento que não se realizou. O abandono e o sofrimento conduzem a jovem a um episódio trágico que termina com a morte de um marinheiro e sua prisão na antiga Casa de Câmara e Cadeia, onde permanece até morrer.\n\nA história, porém, continua depois de sua morte. Anos mais tarde, durante um baile de carnaval realizado no andar superior da Casa de Câmara, Baldomero dança durante a noite com uma bela mulher desconhecida. No dia seguinte, ao consultar uma antiga edição do Jornal Jaguaribe, reconhece em uma fotografia de Anahí a mesma mulher com quem havia dançado.\n\nA narrativa transforma o antigo prédio, que reuniu espaços de festa e de prisão, em cenário onde memória, tragédia e assombração se encontram.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, referência territorial associada à narrativa O Baile de Carnaval, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-002": {
+      "titulo": "O Clarinete da Orquestra",
+      "categoria": "lenda",
+      "narrativa": "Antonino era lembrado como um músico destacado do conjunto de Mestre Cazuza. Depois de uma apresentação, morreu afogado durante a travessia do rio Jaguaribe. Com sua morte, o grupo deixou de contar com o clarinete que ele tocava.\n\nNas apresentações seguintes, porém, dizia-se que o som do instrumento voltava a ser ouvido, com o estilo que todos reconheciam como sendo o de Antonino, mesmo sem existir outro clarinetista no conjunto.\n\nSegundo a tradição registrada, em madrugadas escuras ainda seria possível ouvir ao longe o som de um clarinete nas proximidades do Jaguaribe, como se a música viesse das profundezas das águas.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-003": {
+      "titulo": "O Rosário do Mirinho",
+      "categoria": "lenda",
+      "narrativa": "O Rosário do Mirinho é uma narrativa de assombração construída em torno do roubo de um rosário. Na memória registrada por Antero Pereira Filho, o objeto passa a estar associado a manifestações sobrenaturais e a referências do cotidiano aracatiense, especialmente o cemitério e o jogo do bicho.\n\nA história articula religiosidade popular, medo e crenças compartilhadas na cidade, transformando o rosário roubado em elemento central de uma lembrança marcada pelo sobrenatural.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-004": {
+      "titulo": "No Tempo dos Pontões",
+      "categoria": "lenda",
+      "narrativa": "Antes da construção da ponte sobre o rio Jaguaribe, pessoas, mercadorias e veículos atravessavam o rio em pontões que operavam durante o dia a partir do Porto José Alves. Certa noite, um viajante vindo de Fortaleza chegou depois do horário e imaginou que teria de aguardar até a manhã seguinte.\n\nNo escuro, porém, surgiu um pontão. O proeiro aceitou levá-lo e, durante a travessia, falou sobre os mortos nas águas do Jaguaribe e sobre aquela noite especialmente sombria.\n\nAo alcançar a margem de Aracati, o viajante desembarcou e procurou dinheiro para pagar a passagem. Quando se voltou, a embarcação e o barqueiro haviam desaparecido. Assustado, correu em direção à cidade. A história preserva a memória dos antigos pontões ao transformá-los em cenário de uma travessia entre o cotidiano e o sobrenatural.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-005": {
+      "titulo": "As Lavadeiras das Pedrinhas",
+      "categoria": "lenda",
+      "narrativa": "Antigamente, lavadeiras de Aracati percorriam longas distâncias até as Pedrinhas, localidade entre Majorlândia e Quixaba onde havia água considerada adequada para a lavagem das roupas. Carregando grandes trouxas, faziam o caminho em grupo e muitas vezes retornavam durante a noite para escapar do calor do dia.\n\nCerta madrugada, quando passavam diante da Igreja Matriz, uma das lavadeiras, Deriva, percebeu uma celebração no interior do templo. Encantada com a solenidade, entrou e permaneceu ali por algum tempo. As pessoas estavam bem vestidas, mas, apesar de conhecer muita gente da cidade, ela não reconheceu ninguém. Também parecia não ser notada pelos presentes.\n\nQuando todos começaram a deixar a igreja em silêncio, Deriva imaginou que a manhã já estivesse próxima. Ao atravessar a porta, porém, encontrou novamente a escuridão da madrugada, como se o tempo não tivesse passado. Assustada, pegou a trouxa que deixara do lado de fora e seguiu seu caminho, levando consigo a lembrança daquela estranha celebração.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa As Lavadeiras das Pedrinhas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-006": {
+      "titulo": "O Sobrado das Corujas",
+      "categoria": "lenda",
+      "narrativa": "O Sobrado das Corujas associa uma antiga edificação de Aracati às memórias da escravidão. A narrativa envolve a condição de pessoas escravizadas, a libertação e a morte de uma velha mulher, colocando o sobrado e seu entorno como cenário de uma lembrança marcada pela violência do período escravista.\n\nO conto relaciona essa memória ao Beco da Viração, à Travessa Cônego e aos antigos sobrados da cidade. O elemento sobrenatural funciona, assim, como forma de fazer permanecer no presente uma história vinculada às desigualdades e aos sofrimentos do passado.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-007": {
+      "titulo": "A Morte da Escrava",
+      "categoria": "lenda",
+      "narrativa": "A Morte da Escrava é uma narrativa ligada à experiência da escravidão em Aracati. Entre os personagens registrados estão Rosária, sua filha e o Sr. Dias, enquanto ruas do atual centro histórico aparecem como referências territoriais da história.\n\nO conto recupera a memória da violência imposta às pessoas escravizadas e transforma essa experiência em narrativa de assombração. Ruas como a Coronel Alexanzito, a antiga Rua do Comércio e a Coronel Pompeu tornam-se parte de uma paisagem onde passado, sofrimento e memória permanecem conectados.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-008": {
+      "titulo": "O Perfume do Sonho",
+      "categoria": "lenda",
+      "narrativa": "A narrativa recorda um episódio trágico ligado ao rio Jaguaribe: a explosão de um hidroavião envolvendo dois pilotos alemães. O acontecimento é associado às margens do rio, ao velório realizado na Casa de Câmara e ao sepultamento no Cemitério São Pedro.\n\nNa memória literária de Aracati, a morte dos pilotos passa a integrar o universo de visagens e aparições relacionado ao Jaguaribe. O rio deixa de ser apenas espaço de circulação e trabalho e aparece também como território onde a lembrança dos mortos e o imaginário sobrenatural se encontram.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, referência territorial associada à narrativa O Perfume do Sonho, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-009": {
+      "titulo": "O Cortejo",
+      "categoria": "lenda",
+      "narrativa": "O Cortejo está associado ao antigo imaginário aracatiense sobre o mês de agosto, tradicionalmente lembrado nas narrativas locais como um período propício às assombrações.\n\nA história relaciona esse universo ao Cabaré da Albertiza e ao Cemitério São Pedro. Esses lugares integram a memória territorial do conto e ajudam a transformar o cortejo e a atmosfera noturna da cidade em elementos de uma narrativa marcada pela proximidade entre os vivos e a lembrança dos mortos.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-010": {
+      "titulo": "Mestre Romeiro",
+      "categoria": "lenda",
+      "narrativa": "Mestre Romeiro era um velho carpinteiro conhecido em Aracati pela fabricação de caixões. Em uma época em que o sino da Matriz anunciava mortes, o som de seu martelo também passou a ser associado, pela população, à preparação dos funerais.\n\nQuando Romeiro morreu, esse tipo de trabalho já começava a desaparecer com a chegada das funerárias. Na noite seguinte ao seu enterro, entretanto, pessoas que passaram pela Travessa da Cacimba, a caminho do mercado ou da missa da madrugada, disseram ouvir o bater contínuo de um martelo vindo da antiga oficina.\n\nParecia, segundo a narrativa, que o velho mestre continuava trabalhando na confecção de mais um caixão.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa Mestre Romeiro, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-011": {
+      "titulo": "O Passeio da Moça Loura",
+      "categoria": "lenda",
+      "narrativa": "O Passeio da Moça Loura apresenta uma aparição feminina ligada às ruas do centro de Aracati. A figura da moça passa a integrar o imaginário de assombração da cidade, aparecendo em uma narrativa relacionada aos deslocamentos noturnos e aos espaços históricos aracatienses.\n\nEntre as referências territoriais documentadas para o conto estão a Igreja Matriz, o Cemitério São Pedro e as ruas do centro. A narrativa é também analisada pelos estudos sobre a obra de Antero Pereira Filho em diálogo com questões de gênero e violência presentes na memória social.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa O Passeio da Moça Loura, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-012": {
+      "titulo": "O Beco do Barão",
+      "categoria": "lenda",
+      "narrativa": "Segundo a narrativa, duas pessoas de famílias importantes viviam em sobrados separados por um estreito beco e mantinham um romance que precisava permanecer escondido. Para afastar curiosos e permitir os encontros, espalhou-se a história de que o beco se fechava depois da meia-noite e engolia quem tentasse atravessá-lo.\n\nUm trilho de ferro foi colocado ligando os dois sobrados. Publicamente, dizia-se que ele impediria que o beco se fechasse. Na história registrada por Antero Pereira Filho, porém, sua verdadeira função era permitir que o homem alcançasse discretamente a residência de sua amada.\n\nO lugar permaneceu associado à memória dos amantes e ao imaginário fantástico que deu origem ao chamado Beco do Barão.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-005.jpg",
+        "alt": "Imagem de sobrado histórico associado ao Museu Jaguaribano e ao entorno do Beco do Barão, referência territorial associada à narrativa O Beco do Barão, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-013": {
+      "titulo": "O Rosto do Baú",
+      "categoria": "lenda",
+      "narrativa": "O Rosto do Baú é uma narrativa marcada por visagens, comentários que circulam entre moradores e pela presença de uma procissão no imaginário da história.\n\nO conto relaciona o sobrenatural às formas de sociabilidade de Aracati: aquilo que alguém vê ou acredita ter visto passa de pessoa para pessoa e ganha novas dimensões à medida que circula pela cidade. O rosto associado ao baú torna-se, assim, parte de uma memória coletiva construída entre aparições, medo e relatos compartilhados.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-014": {
+      "titulo": "A Botija da Cruz das Almas",
+      "categoria": "lenda",
+      "narrativa": "A Botija da Cruz das Almas recupera o motivo das botijas e das riquezas escondidas, muito presente no imaginário popular. A narrativa é territorialmente relacionada à Praça Cruz das Almas e ao rio Jaguaribe.\n\nNa história, a busca ou a lembrança da botija aproxima o desejo pela riqueza de um ambiente marcado pelo sobrenatural. A Cruz das Almas deixa de ser apenas um ponto da cidade e passa a compor uma narrativa sobre memória, riqueza e assombração.",
+      "imagem": {
+        "src": "/images/patrimonios/ph-006.jpg",
+        "alt": "Imagem de Cruz das Almas, referência territorial associada à narrativa A Botija da Cruz das Almas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      }
+    },
+    "LD-015": {
+      "titulo": "A Moça do Castelo (Rigolleto)",
+      "categoria": "lenda",
+      "narrativa": "A Moça do Castelo, também identificada nas fontes pela referência a Rigolleto, reúne personagens como Anacleto, Rosário e Adeodato em uma narrativa marcada pelo medo e por acontecimentos descritos pelos estudos como um verdadeiro teatro do macabro.\n\nO conto está associado ao Castelo e integra o conjunto de histórias em que Antero Pereira Filho aproxima memória urbana, relações humanas e elementos sobrenaturais. Estudos sobre a obra também relacionam a narrativa a questões de gênero e violência.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-016": {
+      "titulo": "O Lobisomem da Várzea da Matriz",
+      "categoria": "lenda",
+      "narrativa": "O Lobisomem da Várzea da Matriz recupera uma das figuras mais conhecidas do imaginário popular: o homem que assume a forma de lobisomem.\n\nNa narrativa registrada em Aracati, essa presença sobrenatural é associada a episódios de ciúme e morte e estabelece conexões entre Canoa Quebrada e a cidade. A Várzea da Matriz integra a memória territorial do conto, enquanto estudos sobre a obra relacionam a história também às consequências do alcoolismo.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-017": {
+      "titulo": "A Botija da Lagoa Nova",
+      "categoria": "lenda",
+      "narrativa": "A Botija da Lagoa Nova reúne dois elementos recorrentes das histórias de assombração: a memória de uma botija e a aparição de uma figura branca.\n\nA Lagoa Nova constitui a principal referência territorial da narrativa. Nesse espaço, a lembrança de riquezas escondidas e a presença de um fantasma branco se combinam, fazendo do lugar parte do imaginário sobrenatural registrado nas histórias de Aracati.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-018": {
+      "titulo": "Assombração",
+      "categoria": "lenda",
+      "narrativa": "Assombração é uma narrativa associada ao município de Fortim e construída principalmente em torno de sons relacionados à morte.\n\nEm vez de depender apenas de uma figura visível, o medo surge pela experiência de ouvir aquilo que não se consegue explicar. A narrativa integra, assim, a paisagem sonora ao imaginário sobrenatural da região, associando memória, morte e assombração.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-019": {
+      "titulo": "Sufraia",
+      "categoria": "lenda",
+      "narrativa": "Sufraia era descrito como um homem de aparência assustadora que, segundo a narrativa, transformava-se em um bezerro preto nas noites de lobisomem, nas proximidades da Maloca e da Várzea Preta.\n\nEm certa ocasião, ferido e escondido entre carnaúbas, perdeu a noção do tempo enquanto aguardava voltar à forma humana. Pela tradição narrada por Antero Pereira Filho, o lobisomem precisava desfazer a transformação antes da meia-noite e antes do canto do galo. Sufraia não conseguiu.\n\nAo tentar retornar para casa, sofreu uma transformação definitiva e tornou-se uma figura híbrida, parte humana e parte animal. Desde então teria vagado por currais e monturos nos arredores de Aracati, assustando moradores e temendo até mesmo o latido dos cães.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-020": {
+      "titulo": "O Castigo da Oração",
+      "categoria": "lenda",
+      "narrativa": "O Castigo da Oração é uma narrativa relacionada à Várzea da Matriz e à presença de almas do outro mundo.\n\nA oração, normalmente vinculada à devoção e à proteção, aparece no conto integrada a uma experiência sobrenatural. A história aproxima religiosidade popular, medo e memória, fazendo da Várzea da Matriz um dos espaços simbólicos das assombrações registradas em Aracati.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-021": {
+      "titulo": "O Galo Despertador",
+      "categoria": "lenda",
+      "narrativa": "O Galo Despertador constrói seu elemento de estranhamento a partir do canto de um galo e de sua relação com a casa e com a passagem do tempo.\n\nUm som cotidiano ganha significado inquietante quando rompe a normalidade esperada. A narrativa transforma, assim, um elemento comum da vida doméstica em sinal de mistério, aproximando tempo, memória e assombração.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-022": {
+      "titulo": "Velho Cabeleira",
+      "categoria": "lenda",
+      "narrativa": "Velho Cabeleira integra o conjunto de narrativas aracatienses relacionadas ao lobisomem. A Várzea da Matriz aparece como principal referência territorial da história.\n\nA figura do homem transformado em criatura sobrenatural aproxima uma crença bastante difundida no imaginário popular da paisagem concreta de Aracati. Dessa forma, a Várzea passa a fazer parte não apenas da geografia da cidade, mas também de sua memória fantástica.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-023": {
+      "titulo": "O Garupeiro",
+      "categoria": "lenda",
+      "narrativa": "O Garupeiro apresenta uma assombração relacionada ao universo das motocicletas e aos deslocamentos pela cidade. Estudos sobre a obra descrevem a presença de uma espécie de moto infernal e também registram uma manifestação fantasmagórica associada à ponte.\n\nEntre as referências territoriais do conto aparecem o antigo CERNE, o centro de Aracati e o rio Jaguaribe. A narrativa transforma o deslocamento por esses espaços em uma experiência de medo, na qual o cotidiano e o sobrenatural passam a ocupar o mesmo caminho.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-024": {
+      "titulo": "O Ofício",
+      "categoria": "lenda",
+      "narrativa": "O Ofício é uma narrativa de mistério ambientada no centro de Aracati.\n\nO próprio caráter enigmático da história faz do espaço urbano parte fundamental da experiência narrativa. O centro histórico, com suas ruas, edificações e memórias acumuladas, funciona como cenário para um acontecimento cuja natureza permanece associada ao inexplicável e ao universo das assombrações.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-025": {
+      "titulo": "Oração do Soldado 33",
+      "categoria": "lenda",
+      "narrativa": "Oração do Soldado 33 é uma narrativa construída em torno de uma oração e de um ritual.\n\nO centro da cidade e a Várzea Preta aparecem como referências territoriais do conto. A história aproxima prática ritual, crença e sobrenatural, incorporando esses espaços de Aracati a uma memória em que orações também podem adquirir significados misteriosos e inquietantes.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    "LD-026": {
+      "titulo": "O Choro do Bebê",
+      "categoria": "lenda",
+      "narrativa": "O Choro do Bebê relaciona o som de crianças à memória da morte e às dificuldades enfrentadas pela população de Aracati em períodos marcados por seca, fome e miséria.\n\nO choro, um som normalmente associado à vida e à infância, assume na narrativa um sentido perturbador. A história transforma essa lembrança em manifestação do sobrenatural e, ao mesmo tempo, preserva ecos de experiências sociais dolorosas presentes na memória local.",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    }
+  }
+}

@@ -1,0 +1,1137 @@
+.map-view-shell {
+  position: relative;
+}
+
+/* =========================================================
+   ROTEIRO PERSONALIZADO
+   ========================================================= */
+
+.map-route-toolbar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 720;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 0.45rem;
+
+  max-width: min(
+    520px,
+    calc(100% - 390px)
+  );
+}
+
+.map-route-toggle,
+.map-route-clear,
+.map-route-open {
+  min-height: 2.7rem;
+
+  border: 1px solid
+    rgba(
+      207,
+      217,
+      228,
+      0.95
+    );
+
+  border-radius: 0.8rem;
+
+  box-shadow:
+    0 10px 26px
+    rgba(
+      15,
+      33,
+      54,
+      0.14
+    );
+
+  backdrop-filter:
+    blur(8px);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.map-route-toggle,
+.map-route-clear {
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.96
+    );
+
+  color:
+    #23334a;
+
+  cursor:
+    pointer;
+}
+
+.map-route-toggle {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.65rem;
+
+  padding:
+    0.58rem
+    0.72rem
+    0.58rem
+    0.85rem;
+}
+
+.map-route-toggle:hover,
+.map-route-clear:hover {
+  background:
+    #f7f9fc;
+}
+
+.map-route-toggle.is-active {
+  border-color:
+    #b95e2d;
+
+  background:
+    #b95e2d;
+
+  color:
+    #ffffff;
+}
+
+.map-route-count {
+  min-width:
+    1.65rem;
+
+  min-height:
+    1.65rem;
+
+  display:
+    inline-grid;
+
+  place-items:
+    center;
+
+  padding:
+    0 0.4rem;
+
+  border-radius:
+    999px;
+
+  background:
+    #edf2f7;
+
+  color:
+    #56667b;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    900;
+}
+
+.map-route-toggle.is-active
+.map-route-count {
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.2
+    );
+
+  color:
+    #ffffff;
+}
+
+.map-route-clear {
+  padding:
+    0.58rem
+    0.72rem;
+}
+
+.map-route-open {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    0.35rem;
+
+  padding:
+    0.58rem
+    0.8rem;
+
+  border-color:
+    #1f5b8f;
+
+  background:
+    #1f5b8f;
+
+  color:
+    #ffffff;
+
+  text-decoration:
+    none;
+
+  cursor:
+    pointer;
+}
+
+.map-route-open:hover {
+  background:
+    #174a77;
+
+  color:
+    #ffffff;
+}
+
+.map-route-hint {
+  flex:
+    1 0 100%;
+
+  margin:
+    0;
+
+  padding:
+    0.5rem
+    0.65rem;
+
+  border:
+    1px solid
+    rgba(
+      207,
+      217,
+      228,
+      0.92
+    );
+
+  border-radius:
+    0.65rem;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+
+  box-shadow:
+    0 8px 20px
+    rgba(
+      15,
+      33,
+      54,
+      0.1
+    );
+
+  color:
+    #657287;
+
+  font-size:
+    0.7rem;
+
+  line-height:
+    1.35;
+}
+
+/* =========================================================
+   MARCADOR DO ROTEIRO
+   ========================================================= */
+
+.marker-roteiro {
+  background:
+    #b95e2d !important;
+
+  font-size:
+    0.78rem;
+}
+
+/* =========================================================
+   LISTA LATERAL
+   ========================================================= */
+
+.map-record-list {
+  position: absolute;
+
+  top:
+    1rem;
+
+  right:
+    1rem;
+
+  z-index:
+    700;
+
+  width:
+    min(
+      350px,
+      calc(100% - 2rem)
+    );
+
+  max-height:
+    calc(100% - 2rem);
+
+  overflow-y:
+    auto;
+
+  padding:
+    0.35rem;
+
+  border:
+    1px solid
+    rgba(
+      207,
+      217,
+      228,
+      0.92
+    );
+
+  border-radius:
+    0.95rem;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.95
+    );
+
+  box-shadow:
+    0 14px 34px
+    rgba(
+      15,
+      33,
+      54,
+      0.18
+    );
+
+  backdrop-filter:
+    blur(8px);
+
+  scrollbar-width:
+    thin;
+
+  scrollbar-color:
+    #b5c0ce
+    transparent;
+}
+
+.map-record-list::-webkit-scrollbar {
+  width:
+    8px;
+}
+
+.map-record-list::-webkit-scrollbar-thumb {
+  border-radius:
+    999px;
+
+  background:
+    #b5c0ce;
+}
+
+.map-record-item {
+  width:
+    100%;
+
+  min-height:
+    3.15rem;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    0.75rem;
+
+  padding:
+    0.58rem
+    0.65rem;
+
+  border:
+    0;
+
+  border-radius:
+    0.7rem;
+
+  background:
+    transparent;
+
+  color:
+    var(--ink);
+
+  text-align:
+    left;
+
+  cursor:
+    pointer;
+
+  transition:
+    background
+      150ms
+      ease,
+    box-shadow
+      150ms
+      ease,
+    transform
+      150ms
+      ease,
+    opacity
+      150ms
+      ease;
+}
+
+.map-record-item
++
+.map-record-item {
+  margin-top:
+    0.12rem;
+}
+
+.map-record-item:hover {
+  background:
+    #f2f5f8;
+}
+
+.map-record-item:active {
+  transform:
+    translateY(
+      1px
+    );
+}
+
+.map-record-item:focus-visible {
+  outline:
+    2px solid
+    #365f7a;
+
+  outline-offset:
+    -2px;
+}
+
+.map-record-item:disabled {
+  cursor:
+    not-allowed;
+
+  opacity:
+    0.48;
+}
+
+.map-record-item.is-active {
+  background:
+    #eaf0f6;
+
+  box-shadow:
+    inset
+    0 0 0 1px
+    #cbd7e3;
+}
+
+.map-record-item.is-in-route {
+  background:
+    #fff7f1;
+
+  box-shadow:
+    inset
+    0 0 0 1px
+    #e9c4ae;
+}
+
+.map-record-item.is-in-route:hover {
+  background:
+    #fff1e7;
+}
+
+.map-record-main {
+  min-width:
+    0;
+
+  flex:
+    1 1 auto;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.55rem;
+}
+
+.map-route-order {
+  width:
+    1.65rem;
+
+  height:
+    1.65rem;
+
+  flex:
+    0 0 1.65rem;
+
+  display:
+    inline-grid;
+
+  place-items:
+    center;
+
+  border-radius:
+    50%;
+
+  background:
+    #b95e2d;
+
+  color:
+    #ffffff;
+
+  font-size:
+    0.72rem;
+
+  font-weight:
+    950;
+
+  box-shadow:
+    0 4px 10px
+    rgba(
+      185,
+      94,
+      45,
+      0.24
+    );
+}
+
+.map-record-title {
+  min-width:
+    0;
+
+  flex:
+    1 1 auto;
+
+  overflow:
+    hidden;
+
+  color:
+    #27354a;
+
+  font-size:
+    0.8rem;
+
+  font-weight:
+    800;
+
+  text-overflow:
+    ellipsis;
+
+  white-space:
+    nowrap;
+}
+
+.map-record-item.is-active
+.map-record-title {
+  color:
+    #102944;
+}
+
+.map-record-meta {
+  flex:
+    0 0 auto;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    0.38rem;
+}
+
+.map-record-list
+.popup-chip {
+  min-height:
+    1.4rem;
+
+  padding:
+    0.2rem
+    0.45rem;
+
+  font-size:
+    0.61rem;
+}
+
+.map-record-list
+.popup-id {
+  font-size:
+    0.64rem;
+}
+
+/* =========================================================
+   IDENTIDADE CULTURAL
+   ========================================================= */
+
+.rota-popup
+.popup-content {
+  max-height:
+    min(
+      72vh,
+      640px
+    );
+
+  overflow-y:
+    auto;
+
+  overscroll-behavior:
+    contain;
+
+  scrollbar-width:
+    thin;
+
+  scrollbar-color:
+    #b8c3d0
+    transparent;
+}
+
+.rota-popup
+.popup-content::-webkit-scrollbar {
+  width:
+    7px;
+}
+
+.rota-popup
+.popup-content::-webkit-scrollbar-thumb {
+  border-radius:
+    999px;
+
+  background:
+    #b8c3d0;
+}
+
+.rota-popup
+.popup-media {
+  margin:
+    0.8rem
+    0
+    0;
+}
+
+.rota-popup
+.popup-media img {
+  display:
+    block;
+
+  width:
+    100%;
+
+  aspect-ratio:
+    16 / 9;
+
+  object-fit:
+    cover;
+
+  border:
+    1px solid
+    #e1e7ee;
+
+  border-radius:
+    0.8rem;
+
+  background:
+    #eef2f6;
+}
+
+.rota-popup
+.popup-media-caption {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  align-items:
+    center;
+
+  gap:
+    0.25rem
+    0.5rem;
+
+  margin-top:
+    0.38rem;
+
+  color:
+    #778397;
+
+  font-size:
+    0.66rem;
+
+  line-height:
+    1.4;
+}
+
+.rota-popup
+.popup-media-caption
+span:first-child::before {
+  content:
+    'Imagem: ';
+
+  font-weight:
+    800;
+}
+
+.rota-popup
+.popup-media-license::before {
+  content:
+    'Licença: ';
+
+  font-weight:
+    800;
+}
+
+.rota-popup
+.popup-media-caption a {
+  color:
+    #365f7a;
+
+  font-weight:
+    800;
+
+  text-decoration:
+    none;
+}
+
+.rota-popup
+.popup-media-caption a:hover {
+  text-decoration:
+    underline;
+}
+
+.rota-popup
+.popup-description {
+  margin-top:
+    0.8rem;
+}
+
+.rota-popup
+.popup-description p {
+  margin:
+    0
+    0
+    0.68rem;
+
+  color:
+    #526075;
+
+  font-size:
+    0.83rem;
+
+  line-height:
+    1.58;
+}
+
+.rota-popup
+.popup-description
+p:last-child {
+  margin-bottom:
+    0;
+}
+
+.rota-popup
+.popup-actions {
+  padding-bottom:
+    0.05rem;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media
+(max-width: 768px) {
+
+  .map-route-toolbar {
+    top:
+      0.75rem;
+
+    left:
+      0.75rem;
+
+    max-width:
+      calc(
+        100% - 1.5rem
+      );
+  }
+
+  .map-record-list {
+    top:
+      4.35rem;
+
+    right:
+      0.75rem;
+
+    width:
+      min(
+        310px,
+        calc(
+          100% - 1.5rem
+        )
+      );
+
+    max-height:
+      43%;
+  }
+
+  .rota-popup
+  .popup-content {
+    max-height:
+      min(
+        68vh,
+        560px
+      );
+  }
+}
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media
+(max-width: 480px) {
+
+  .map-route-toolbar {
+    top:
+      0.65rem;
+
+    left:
+      0.65rem;
+
+    right:
+      0.65rem;
+
+    max-width:
+      none;
+  }
+
+  .map-route-toggle {
+    flex:
+      1 1 auto;
+  }
+
+  .map-route-open {
+    flex:
+      1 1 100%;
+  }
+
+  .map-route-hint {
+    display:
+      none;
+  }
+
+  .map-record-list {
+    top:
+      7.4rem;
+
+    right:
+      0.65rem;
+
+    width:
+      calc(
+        100% - 1.3rem
+      );
+
+    max-height:
+      36%;
+  }
+
+  .map-record-item {
+    min-height:
+      3rem;
+
+    gap:
+      0.55rem;
+
+    padding:
+      0.52rem
+      0.55rem;
+  }
+
+  .map-record-title {
+    font-size:
+      0.76rem;
+  }
+
+  .rota-popup
+  .popup-content {
+    max-height:
+      min(
+        64vh,
+        500px
+      );
+  }
+
+  .rota-popup
+  .popup-media img {
+    aspect-ratio:
+      4 / 3;
+  }
+}
+
+/* =========================================================
+   PAINEL RECOLHÍVEL DE LOCAIS E CONTROLES MOBILE
+   ========================================================= */
+.map-record-trigger,
+.map-record-list-header,
+.map-view-actions { display: none; }
+
+@media (max-width: 768px) {
+  .map-route-toolbar {
+    top: 0.7rem;
+    left: 0.7rem;
+    right: 0.7rem;
+    max-width: none;
+    width: max-content;
+    max-width: calc(100% - 1.4rem);
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    pointer-events: none;
+  }
+  .map-route-toolbar > * { pointer-events: auto; }
+  .map-route-toggle, .map-route-clear, .map-route-open {
+    min-height: 2.5rem;
+    flex: 0 1 auto;
+    padding: 0.45rem 0.6rem;
+    font-size: 0.76rem;
+  }
+  .map-route-toggle { gap: 0.5rem; }
+  .map-route-open { flex-basis: auto; }
+  .map-route-hint { display: none; }
+
+  .map-record-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    position: absolute;
+    bottom: 0.65rem;
+    left: 0.65rem;
+    z-index: 750;
+    min-height: 2.75rem;
+    max-width: calc(100% - 5.5rem);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #dbe3ed;
+    border-radius: 0.75rem;
+    background: #ffffff;
+    color: #17324f;
+    box-shadow: 0 9px 28px rgba(15,33,54,0.2);
+    font-size: 0.8rem;
+    font-weight: 850;
+    cursor: pointer;
+  }
+  .map-record-trigger-count {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.45rem;
+    min-height: 1.45rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 999px;
+    background: #e9f1f7;
+    font-size: 0.72rem;
+  }
+  .map-record-list {
+    display: none;
+    top: auto;
+    bottom: 4.0rem;
+    left: 0.65rem;
+    right: 0.65rem;
+    width: auto;
+    max-height: min(53%, 420px);
+    border-radius: 0.95rem;
+    padding: 0.35rem;
+    background: rgba(255,255,255,0.98);
+    box-shadow: 0 12px 36px rgba(15,33,54,0.25);
+  }
+  .map-record-list.is-open { display: block; }
+  .map-record-list-header {
+    position: sticky;
+    top: -0.35rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.6rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e3e9f0;
+    color: #243c56;
+    font-size: 0.77rem;
+  }
+  .map-record-list-header span { color: #6b7686; font-size: 0.71rem; }
+  .map-record-item { min-height: 2.85rem; padding: 0.55rem; }
+  .map-record-title { font-size: 0.81rem; }
+
+  .map-view-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: absolute;
+    z-index: 650;
+    right: 0.65rem;
+    bottom: 6.6rem;
+  }
+  .map-view-actions button {
+    min-height: 2.5rem;
+    min-width: 4.7rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #cdd9e5;
+    border-radius: 0.7rem;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 7px 20px rgba(15,33,54,0.17);
+    color: #17324f;
+    font-size: 0.72rem;
+    font-weight: 850;
+    cursor: pointer;
+  }
+  .map-view-actions button:focus-visible,
+  .map-record-trigger:focus-visible { outline: 3px solid #176a79; outline-offset: 2px; }
+  .leaflet-bottom.leaflet-right { margin-right: 0.25rem; margin-bottom: 0.25rem; }
+  .rota-popup .popup-content { max-height: min(56dvh, 470px); }
+}
+
+@media (max-width: 360px) {
+  .map-record-list .popup-id { display: none; }
+  .map-record-list { max-height: 48%; }
+  .map-route-toolbar { top: 0.5rem; left: 0.5rem; }
+}
+
+@media (max-width: 768px) {
+  /* A lista aberta tem prioridade; controles não devem cobrir os itens. */
+  .map-view-shell.has-list-open .leaflet-control-zoom,
+  .map-view-shell.has-list-open .map-view-actions { display: none; }
+}
+
+/* =========================================================
+   GRUPOS DE REGISTROS NO MESMO PONTO
+   Sem alterar nenhuma coordenada da base cultural.
+   ========================================================= */
+
+.custom-marker.marker-agrupado {
+  width: 42px;
+  height: 42px;
+  font-size: 0.88rem;
+  border-width: 3px;
+  box-shadow: 0 5px 14px rgba(17, 35, 57, 0.26),
+              0 0 0 3px rgba(255, 255, 255, 0.72);
+}
+
+.custom-marker.marker-misto {
+  background: linear-gradient(135deg, #18778a 48%, #6c3b85 48%);
+}
+
+.rota-popup .popup-grupo {
+  width: clamp(250px, 72vw, 310px);
+  padding: 0.85rem;
+  max-height: min(62dvh, 460px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.rota-popup .popup-grupo-header h3 {
+  color: #22364e;
+  font-size: 1.08rem;
+  margin: 0.3rem 0 0.35rem;
+}
+
+.rota-popup .popup-grupo-header p {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #56667b;
+  margin: 0 0 0.65rem;
+}
+
+.rota-popup .popup-grupo-contador {
+  font-weight: 800;
+  color: #6c3b85;
+  font-size: 0.72rem;
+}
+
+.rota-popup .popup-grupo-itens { display: grid; gap: 0.35rem; }
+
+.rota-popup .popup-grupo-registro {
+  border: 1px solid #dee5ed;
+  border-radius: 0.7rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.rota-popup .popup-grupo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+}
+
+.rota-popup .popup-grupo-item::-webkit-details-marker { display: none; }
+
+.rota-popup .popup-grupo-registro[open] > .popup-grupo-item,
+.rota-popup .popup-grupo-item:hover,
+.rota-popup .popup-grupo-item:focus-visible {
+  background: #f0f5f9;
+}
+
+.rota-popup .popup-grupo-item:focus-visible {
+  outline: 3px solid #176a79;
+  outline-offset: -3px;
+}
+
+.rota-popup .popup-grupo-item-titulo {
+  font-size: 0.8rem;
+  font-weight: 750;
+  color: #25354b;
+}
+
+.rota-popup .popup-grupo-item small {
+  flex-shrink: 0;
+  font-size: 0.66rem;
+  color: #68758b;
+}
+
+.rota-popup .popup-grupo-detalhe {
+  border-top: 1px solid #e3e8ef;
+  padding: 0.65rem;
+}
+
+.rota-popup .popup-grupo-detalhe .popup-content {
+  max-height: none;
+  overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .rota-popup .popup-grupo { max-height: min(55dvh, 430px); }
+  .rota-popup .popup-grupo-item { min-height: 46px; }
+
+  /* O popup tem prioridade sobre controles flutuantes no celular. */
+  .map-view-shell.has-popup-open .map-route-toolbar,
+  .map-view-shell.has-popup-open .map-view-actions,
+  .map-view-shell.has-popup-open .map-record-trigger { display: none; }
+}

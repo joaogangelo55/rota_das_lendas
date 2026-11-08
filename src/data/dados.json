@@ -1,0 +1,1824 @@
+{
+  "metadata": {
+    "projeto": "Rota das Lendas",
+    "versao_dados": "2.1.1",
+    "data_conversao": "2026-09-05",
+    "base_documental": "Rota_das_Lendas_Caderno_Tecnico_v3.0_AUDITORIA_v0.4.0.docx",
+    "sistema_referencia_espacial": "WGS84 / EPSG:4326",
+    "ordem_coordenadas_geojson": "[longitude, latitude]",
+    "regra_integridade": "Nenhuma coordenada representa automaticamente o local exato de um acontecimento narrado. As 25 lendas do desenvolvimento utilizam Point compatível com o grau de evidência: T1 para local associado específico, T2 para ponto de referência territorial e T3 para referência geral. LD-018 permanece catalogada e fora da camada do mapa.",
+    "regra_lendas": "As lendas são tratadas como narrativas literárias/memorialísticas; eventos sobrenaturais não são apresentados como fatos históricos.",
+    "contagens": {
+      "patrimonios_incluidos": 16,
+      "candidatos_nao_mvp": 4,
+      "lendas_catalogadas": 26,
+      "registros_totais_json": 46,
+      "patrimonios_com_coordenadas": 16,
+      "patrimonios_sem_coordenadas": 0
+    },
+    "data_georreferenciamento_final": "2026-09-05",
+    "criterio_georreferenciamento": "Identidade + endereço/localização + coordenada sustentados por pelo menos uma fonte/referência validada; confirmação visual não exigida nesta rodada.",
+    "correcao_ph006": "PH-006 atualizado para -4.570617, -37.774423 após conferência do pesquisador no Google Maps em 05/09/2026.",
+    "auditoria_territorial_lendas": {
+      "versao": "v0.4.0",
+      "data": "2026-09-27",
+      "corpus_total": 26,
+      "no_desenvolvimento": 25,
+      "fora_desenvolvimento": [
+        "LD-018"
+      ],
+      "classificacao": {
+        "T1": 2,
+        "T2": 17,
+        "T3": 6
+      }
+    },
+    "pontos_referencia_v040": {
+      "lendas_com_point_no_desenvolvimento": 25,
+      "lendas_fora_desenvolvimento": [
+        "LD-018"
+      ],
+      "regra": "Point cartográfico não equivale a localização exata; o significado é declarado por nivel_representacao e ponto_referencia."
+    },
+    "modelo_conteudo_identidade": {
+      "versao": "1.0",
+      "campo_lendas": "narrativa",
+      "campo_patrimonios": "texto_historico",
+      "campos_imagem": [
+        "src",
+        "alt",
+        "credito",
+        "fonte",
+        "licenca"
+      ],
+      "regra_pendencia": "Valor null indica conteúdo ainda não validado/preenchido. A descrição documental permanece como fallback até a validação do conteúdo de exibição."
+    }
+  },
+  "fontes": {
+    "S01": {
+      "referencia": "SILVA, Rafael Guimarães Tavares da. Entre história e ficção, os bons ventos da memória: reflexões sobre a obra de Antero Pereira Filho. Estudos de Literatura Brasileira Contemporânea, n. 74, e7407, 2025. DOI 10.1590/2316-40187407. SciELO, publicação em 03 fev. 2025.",
+      "url": "https://www.scielo.br/j/elbc/a/fG8NmmPwy8gvfkQpNtRNc6j/"
+    },
+    "S02": {
+      "referencia": "ARAUJO, Cristiano Santos. Sombras e assombrações nos becos da memória do Aracati: considerações tempestivas da arte literária-numinosa de Antero Pereira Filho. Caminhos, v. 23, n. 2, e15295, 2025. DOI 10.18224/cam.v23i2.15295.",
+      "url": "https://seer.pucgoias.edu.br/index.php/caminhos/article/view/15295"
+    },
+    "S03": {
+      "referencia": "Registro patrimonial da Igreja Matriz de Nossa Senhora do Rosário de Aracati: processo 0550-T-56; inscrição no Livro Histórico em 24 jan. 1957 (registro IPHAN transcrito em base de patrimônio).",
+      "url": "https://www.ipatrimonio.org/aracati-igreja-matriz-de-nossa-senhora-do-rosario/"
+    },
+    "S04": {
+      "referencia": "Mapcarta/OpenStreetMap. Igreja Matriz de Nossa Senhora do Rosário, Aracati. Coordenadas cartográficas.",
+      "url": "https://mapcarta.com/pt/N3907221285"
+    },
+    "S05": {
+      "referencia": "MINISTÉRIO PÚBLICO DO ESTADO DO CEARÁ. Edição especial do Clube de Leitura abre programação do Congresso Regional do MP em Aracati. 4 jun. 2025. Confirma a Casa de Adolfo Caminha como local onde nasceu e viveu na infância.",
+      "url": "https://mpce.mp.br/edicao-especial-do-clube-de-leitura-abre-programacao-do-congresso-regional-do-mp-em-aracati/"
+    },
+    "S06": {
+      "referencia": "PREFEITURA DE ARACATI / órgãos municipais. Registros atuais da Avenida Coronel Alexanzito e equipamentos públicos do conjunto urbano.",
+      "url": "https://aracati.ce.gov.br/"
+    },
+    "S07": {
+      "referencia": "PREFEITURA DE ARACATI. Cadastro/endereço da EEF Prof. Régis Bernardo de Souza, Av. Cel. Alexanzito, 520.",
+      "url": "https://aracati.ce.gov.br/"
+    },
+    "S08": {
+      "referencia": "Produção acadêmica da UECE/UFC sobre Aracati e Confederação do Equador, associando o imóvel da Escola Prof. Régis Bernardo à memória do movimento de 1824.",
+      "url": "https://www.uece.br/"
+    },
+    "S09": {
+      "referencia": "CEARÁ. Lei nº 18.924, de 16 jul. 2024. Inclui a Praça Cruz das Almas na Rota do Turismo Religioso do Estado do Ceará.",
+      "url": "https://www.al.ce.gov.br/"
+    },
+    "S10": {
+      "referencia": "HPIP – Patrimônio de Influência Portuguesa. Aracati: enquadramento histórico e urbanismo; referência ao sítio da Cruz das Almas na implantação da vila.",
+      "url": "https://hpip.org/pt/Contents/Place/6"
+    },
+    "S11": {
+      "referencia": "IPHAN. CE – Aracati – Restauração da Igreja de Nosso Senhor do Bonfim (FINAL), 2022.",
+      "url": "https://www.gov.br/iphan/"
+    },
+    "S12": {
+      "referencia": "Wikimedia Commons. Igreja do Bonfim em Aracati; georreferenciamento e licença CC BY-SA 4.0.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    "S13": {
+      "referencia": "Registro patrimonial da Casa de Câmara e Cadeia de Aracati: processo 0879-T-73; inscrições em 08 abr. 1980 (registro IPHAN transcrito em base de patrimônio).",
+      "url": "https://www.ipatrimonio.org/aracati-casa-de-camara-e-cadeia/"
+    },
+    "S14": {
+      "referencia": "MuseusBr / Instituto do Museu Jaguaribano. Registro institucional e endereço do Museu Jaguaribano.",
+      "url": "https://cadastro.museus.gov.br/"
+    },
+    "S15": {
+      "referencia": "Wikimedia Commons. Instituto do Museu Jaguaribano em Aracati; georreferenciamento do edifício e licença aberta.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    "S16": {
+      "referencia": "PREFEITURA DE ARACATI. Reforma da Igreja Nossa Senhora do Rosário dos Homens Pretos. Concorrência/contrato de 2024.",
+      "url": "https://aracati.ce.gov.br/licitacaolista.php?id=1093"
+    },
+    "S17": {
+      "referencia": "Wikimedia Commons. Igreja de Nossa Senhora do Rosário dos Homens Pretos, Aracati; coordenadas e licença aberta.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    "S18": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Igreja Nossa Senhora dos Prazeres. Secretaria de Cultura de Aracati.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/"
+    },
+    "S19": {
+      "referencia": "Wikimedia Commons. Igreja Nossa Senhora dos Prazeres, Aracati; coordenadas e licença aberta.",
+      "url": "https://commons.wikimedia.org/"
+    },
+    "S20": {
+      "referencia": "BRASIL. Ministério da Cultura. PNLD no Ceará – cadastro da Biblioteca Pública Municipal Monsenhor Bruno, Aracati.",
+      "url": "https://www.gov.br/cultura/pt-br/assuntos/sistema-nacional-de-bibliotecas-publicas-snbp/pnld-bibliotecas/pnld-ceara"
+    },
+    "S21": {
+      "referencia": "OLIVEIRA, B. C. Trabalho acadêmico de arquitetura/centro de documentação no sítio histórico de Aracati, UFC, 2011; capítulos sobre Biblioteca Monsenhor Bruno, Matriz, Mercado Velho e Fábrica Santa Tereza.",
+      "url": "https://repositorio.ufc.br/ri/bitstream/riufc/80992/1/2011_tcc_bcoliveira.pdf"
+    },
+    "S22": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Fábrica de Tecido Santa Tereza. Secretaria de Cultura de Aracati.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/"
+    },
+    "S23": {
+      "referencia": "FALCÃO, E. C. F. Tese/estudo sobre paisagens culturais urbanas de Aracati, UFC, 2025; rota com 40 referências culturais.",
+      "url": "https://repositorio.ufc.br/ri/bitstream/riufc/82312/3/2025_tese_ecfalcao.pdf"
+    },
+    "S24": {
+      "referencia": "BRASIL. Diário Oficial da União, 8 ago. 2014. Contrato IPHAN para restauro e pesquisa arqueológica do Teatro Francisca Clotilde, Av. Cel. Alexanzito, 697.",
+      "url": "https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-oficial-da-uniao-1/2014/dou3_2014_08_08.pdf"
+    },
+    "S25": {
+      "referencia": "Mapa Cultural do Ceará / Município de Aracati. Teatro Francisca Clotilde, endereço e descrição institucional.",
+      "url": "https://mapacultural.altosanto.ce.gov.br/espaco/6428/"
+    },
+    "S26": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI e FALCÃO (2025). Casa Ponciano como referência de memória comercial/sociabilidade.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/"
+    },
+    "S27": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Mercado Público (Mercado Velho); cruzado com estudos acadêmicos do sítio histórico.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/"
+    },
+    "S28": {
+      "referencia": "PREFEITURA DE ARACATI. Pontos turísticos: Nicho do Bom Jesus dos Navegantes; cruzado com FALCÃO (2025).",
+      "url": "https://aracati.ce.gov.br/pontosturisticos.php"
+    },
+    "S29": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Espaço das Artes, sobrado histórico e uso cultural contemporâneo.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/ponto-cultural/espaco-das-artes/"
+    },
+    "S30": {
+      "referencia": "PREFEITURA DE ARACATI. Registros administrativos de aquisição/estruturação do Espaço das Artes, 2024.",
+      "url": "https://aracati.ce.gov.br/dispensaeinexigibilidade.php?id=1167"
+    },
+    "S31": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Aracaty Club. Secretaria de Cultura.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/ponto-cultural/aracaty-club/"
+    },
+    "S32": {
+      "referencia": "ROTEIRO VIRTUAL ARACATI. Universo municipal de 20 pontos culturais, incluindo Casa Coe, Casa de Beni Carvalho e Casa de Jacques Klein.",
+      "url": "https://roteirovirtual.aracati.ce.gov.br/"
+    }
+  },
+  "patrimonios": [
+    {
+      "id": "PH-001",
+      "titulo": "Igreja de Nosso Senhor do Bonfim",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura religiosa; séc. XVIII",
+      "descricao": "Arquitetura religiosa; séc. XVIII. Evidência principal: restauração documentada pelo IPHAN; bem do ambiente histórico de Aracati.",
+      "localizacao_nome": "Travessa Senhor do Bonfim / Farias Brito",
+      "endereco": "Travessa Senhor do Bonfim, Farias Brito, Aracati-CE",
+      "latitude": -4.568264,
+      "longitude": -37.773822,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "restauração documentada pelo IPHAN; bem do ambiente histórico de Aracati",
+      "ancora_cartografica_original": "-4.568264, -37.773822",
+      "fonte_principal": "S11",
+      "fontes_complementares": [
+        "S12"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-001.jpg",
+        "alt": "Imagem de Igreja de Nosso Senhor do Bonfim, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "Erguida no século XVIII, a Igreja de Nosso Senhor do Bonfim integra o conjunto religioso do centro histórico de Aracati. O templo apresenta características associadas ao barroco tardio e conserva vínculos com antigas práticas de devoção e com a memória de sua irmandade.\n\nAlém do valor arquitetônico, a igreja permanece como referência religiosa e cultural da cidade. Em 2022, o edifício foi objeto de ação de restauração documentada pelo IPHAN, reforçando a importância de sua preservação para a paisagem histórica de Aracati."
+    },
+    {
+      "id": "PH-002",
+      "titulo": "Casa de Câmara e Cadeia de Aracati",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura civil pública; administração/justiça",
+      "descricao": "Arquitetura civil pública; administração/justiça. Evidência principal: tombamento federal individual; processo 0879-T-73.",
+      "localizacao_nome": "Rua Liberato Barroso, esquina Praça da Independência",
+      "endereco": "Rua Liberato Barroso, esquina com a Praça da Independência, Aracati-CE",
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "tombamento federal individual; processo 0879-T-73",
+      "ancora_cartografica_original": "-4.562544, -37.772089",
+      "fonte_principal": "S13",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "Construída no século XVIII, a Casa de Câmara e Cadeia reuniu funções administrativas, políticas, judiciais e prisionais de Aracati. A edificação representa a organização do poder municipal no período colonial e constitui uma das referências da arquitetura civil pública do centro histórico.\n\nAo longo do tempo, o prédio passou por modificações, mas preservou sua importância na paisagem urbana. O bem possui tombamento federal individual, registrado no processo 0879-T-73, e permanece como testemunho material da história política, administrativa e social da antiga vila."
+    },
+    {
+      "id": "PH-003",
+      "titulo": "Casa/Sobrados associados a Adolfo Caminha",
+      "categoria": "patrimonio",
+      "subcategoria": "Memória literária; arquitetura civil",
+      "descricao": "Memória literária; arquitetura civil. Evidência principal: MPCE confirma local de nascimento/infância; inserção no centro histórico.",
+      "localizacao_nome": "Av. Cel. Alexanzito, Centro Histórico",
+      "endereco": "Av. Coronel Alexanzito, 974, Farias Brito, Aracati-CE",
+      "latitude": -4.567128,
+      "longitude": -37.773761,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C5"
+      ],
+      "evidencia_principal": "MPCE confirma local de nascimento/infância; inserção no centro histórico",
+      "ancora_cartografica_original": "usar endereço canônico na geocodificação",
+      "fonte_principal": "S05",
+      "fontes_complementares": [
+        "S06"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-003.jpg",
+        "alt": "Imagem de Casa/Sobrados associados a Adolfo Caminha, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps",
+      "referencia_georreferenciamento": "Place ID ChIJvYT0s3KzuQcR0_HCm7CkzO4",
+      "metodo_georreferenciamento": "trilateracao_geodesica_do_mesmo_pin_google_maps",
+      "precisao_estimada_m": 3,
+      "observacao_georreferenciamento": "Identidade e endereço associados ao mesmo Place ID do Google Maps. Par numérico obtido por trilateração geodésica a partir de retornos de distância do mesmo pin, sem confirmação visual.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "Este imóvel do centro histórico está associado à memória de Adolfo Caminha, escritor naturalista nascido em Aracati em 1867 e reconhecido pela literatura brasileira. Registros institucionais relacionam o local à infância do escritor, tornando-o uma referência da memória literária aracatiense.\n\nAlém da relação biográfica, a edificação integra a paisagem formada pelos antigos sobrados da atual Avenida Coronel Alexanzito. O ponto articula, portanto, arquitetura civil, história urbana e patrimônio literário, aproximando a trajetória de Adolfo Caminha do território onde viveu seus primeiros anos."
+    },
+    {
+      "id": "PH-004",
+      "titulo": "EEF Prof. Régis Bernardo / imóvel associado à Confederação do Equador",
+      "categoria": "patrimonio",
+      "subcategoria": "Memória política; arquitetura civil",
+      "descricao": "Memória política; arquitetura civil. Evidência principal: endereço oficial + associação histórica em pesquisa acadêmica.",
+      "localizacao_nome": "Av. Cel. Alexanzito, 520, Centro",
+      "endereco": "Av. Coronel Alexanzito, 520, Centro, Aracati-CE",
+      "latitude": -4.563195552,
+      "longitude": -37.77220963,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C5"
+      ],
+      "evidencia_principal": "endereço oficial + associação histórica em pesquisa acadêmica",
+      "ancora_cartografica_original": "usar endereço oficial na geocodificação",
+      "fonte_principal": "S07",
+      "fontes_complementares": [
+        "S08"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-004.jpg",
+        "alt": "Imagem de EEF Prof. Régis Bernardo / imóvel associado à Confederação do Equador, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Escolas no Brasil / cadastro público da unidade",
+      "referencia_georreferenciamento": "Registro da EEF Prof. Régis Bernardo de Souza",
+      "metodo_georreferenciamento": "coordenada_publicada_diretamente",
+      "precisao_estimada_m": null,
+      "observacao_georreferenciamento": "A fonte associa diretamente nome da escola, endereço e latitude/longitude.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "O imóvel atualmente ocupado pela EEF Prof. Régis Bernardo de Souza é utilizado neste projeto como referência territorial associada à memória da Confederação do Equador em Aracati. O movimento de 1824 contestou o centralismo do Império e mobilizou diferentes localidades do Nordeste em defesa de propostas republicanas e federalistas.\n\nPesquisas acadêmicas associam esse setor do centro histórico às articulações políticas daquele período. Por cautela documental, o ponto é apresentado como lugar de memória relacionado ao movimento, sem afirmar que a configuração atual da edificação corresponde integralmente à existente em 1824."
+    },
+    {
+      "id": "PH-005",
+      "titulo": "Sobrado do Barão de Aracati / Museu Jaguaribano",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura civil; museu/memória",
+      "descricao": "Arquitetura civil; museu/memória. Evidência principal: museu registrado; bem histórico e equipamento de memória.",
+      "localizacao_nome": "Rua Cel. Alexanzito, 743, Centro",
+      "endereco": "Rua Coronel Alexanzito, 743, Centro, Aracati-CE",
+      "latitude": -4.56496,
+      "longitude": -37.77284,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "museu registrado; bem histórico e equipamento de memória",
+      "ancora_cartografica_original": "-4.56496, -37.77284",
+      "fonte_principal": "S14",
+      "fontes_complementares": [
+        "S15"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-005.jpg",
+        "alt": "Imagem de Sobrado do Barão de Aracati / Museu Jaguaribano, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "O sobrado que abriga o Museu Jaguaribano é uma importante referência da arquitetura civil e da memória cultural de Aracati. Criado em 1968, o museu reúne objetos e acervos relacionados à história, aos modos de vida, à religiosidade e às atividades econômicas da região jaguaribana.\n\nInstalado em uma edificação histórica da Rua Coronel Alexanzito, o equipamento aproxima patrimônio arquitetônico e preservação da memória. Sua atuação contribui para conservar e difundir documentos, objetos e referências culturais vinculadas à trajetória histórica de Aracati e do Vale do Jaguaribe."
+    },
+    {
+      "id": "PH-006",
+      "titulo": "Cruz das Almas",
+      "categoria": "patrimonio",
+      "subcategoria": "Monumento; memória religiosa e urbana",
+      "descricao": "Monumento; memória religiosa e urbana. Evidência principal: sítio vinculado à implantação da vila; reconhecimento em rota estadual religiosa.",
+      "localizacao_nome": "Monumento Cruz das Almas, Farias Brito, Aracati-CE",
+      "endereco": "Rua José de Alencar, Farias Brito, Aracati-CE, 62800-000",
+      "latitude": -4.570617,
+      "longitude": -37.774423,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C5"
+      ],
+      "evidencia_principal": "sítio vinculado à implantação da vila; reconhecimento em rota estadual religiosa",
+      "ancora_cartografica_original": "não publicar coordenada divergente; geocodificar pelo monumento",
+      "fonte_principal": "S09",
+      "fontes_complementares": [
+        "S10"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-006.jpg",
+        "alt": "Imagem de Cruz das Almas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps — Monumento Cruz das Almas",
+      "referencia_georreferenciamento": "Coordenadas conferidas pelo pesquisador no Google Maps: -4.570617, -37.774423",
+      "metodo_georreferenciamento": "coordenada_publicada_diretamente",
+      "precisao_estimada_m": null,
+      "observacao_georreferenciamento": "Correção da posição após teste manual das 16 fichas patrimoniais; o marcador anterior estava deslocado.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "A Cruz das Almas é um antigo marco urbano e religioso situado na entrada sul do núcleo histórico de Aracati. Formada por uma cruz sobre pedestal de alvenaria, a referência está relacionada à formação da vila e permanece integrada à memória devocional da população.\n\nAlém de sua presença histórica na paisagem urbana, a Praça Cruz das Almas foi incluída, em 2024, na Rota do Turismo Religioso do Estado do Ceará. Esse reconhecimento reforça seu papel como lugar de fé, memória e identidade cultural na cidade."
+    },
+    {
+      "id": "PH-007",
+      "titulo": "Igreja Matriz de Nossa Senhora do Rosário",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura religiosa; arte sacra",
+      "descricao": "Arquitetura religiosa; arte sacra. Evidência principal: tombamento federal individual em 24/01/1957, proc. 0550-T-56.",
+      "localizacao_nome": "Rua Dragão do Mar, Centro",
+      "endereco": "Rua Dragão do Mar, Centro, Aracati-CE",
+      "latitude": -4.56078,
+      "longitude": -37.76892,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "tombamento federal individual em 24/01/1957, proc. 0550-T-56",
+      "ancora_cartografica_original": "-4.560780, -37.768920",
+      "fonte_principal": "S03",
+      "fontes_complementares": [
+        "S04"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "A Igreja Matriz de Nossa Senhora do Rosário desenvolveu-se a partir de uma capela primitiva do século XVIII. Sua fachada foi concluída em 1785, enquanto diferentes etapas construtivas e intervenções se prolongaram pelo século XIX.\n\nO conjunto reúne arquitetura religiosa e arte sacra, combinando elementos barrocos com transformações posteriores. A Matriz possui tombamento federal individual, registrado no processo 0550-T-56 em 1957, e permanece como uma das principais referências históricas, religiosas e visuais do centro de Aracati."
+    },
+    {
+      "id": "PH-008",
+      "titulo": "Igreja de Nossa Senhora do Rosário dos Homens Pretos",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura religiosa; memória afro-brasileira",
+      "descricao": "Arquitetura religiosa; memória afro-brasileira. Evidência principal: reconhecida e restaurada pelo município; integrante do conjunto histórico.",
+      "localizacao_nome": "Centro Histórico de Aracati",
+      "endereco": null,
+      "latitude": -4.566617,
+      "longitude": -37.771639,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "reconhecida e restaurada pelo município; integrante do conjunto histórico",
+      "ancora_cartografica_original": "-4.566617, -37.771639",
+      "fonte_principal": "S16",
+      "fontes_complementares": [
+        "S17"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-008.jpg",
+        "alt": "Imagem de Igreja de Nossa Senhora do Rosário dos Homens Pretos, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "Erguida no final do século XVIII e vinculada à Irmandade dos Homens Pretos, a Igreja de Nossa Senhora do Rosário dos Homens Pretos é uma importante referência da presença e da memória afro-brasileira em Aracati.\n\nO templo, associado a uma expressão barroca popular, integra o conjunto histórico da cidade e relaciona devoção, sociabilidade e resistência cultural de populações negras. Sua permanência na paisagem urbana e as ações contemporâneas de preservação reforçam sua relevância histórica e simbólica."
+    },
+    {
+      "id": "PH-009",
+      "titulo": "Igreja Nossa Senhora dos Prazeres",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura religiosa; Irmandade dos Homens Pardos Livres",
+      "descricao": "Arquitetura religiosa; Irmandade dos Homens Pardos Livres. Evidência principal: descrição institucional + inserção no conjunto histórico.",
+      "localizacao_nome": "Centro Histórico de Aracati",
+      "endereco": null,
+      "latitude": -4.567998,
+      "longitude": -37.772363,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "descrição institucional + inserção no conjunto histórico",
+      "ancora_cartografica_original": "-4.567998, -37.772363",
+      "fonte_principal": "S18",
+      "fontes_complementares": [
+        "S19"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-009.jpg",
+        "alt": "Imagem de Igreja Nossa Senhora dos Prazeres, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "Construída no século XVIII pela Irmandade dos Homens Pardos Livres, a Igreja de Nossa Senhora dos Prazeres integra o conjunto religioso do centro histórico de Aracati.\n\nO templo apresenta linguagem colonial simples e conserva elementos de arte sacra, entre eles trabalhos em madeira. Sua história evidencia a organização das irmandades religiosas e formas de sociabilidade presentes na cidade colonial. Atualmente, permanece como referência de devoção e como componente da paisagem cultural histórica de Aracati."
+    },
+    {
+      "id": "PH-010",
+      "titulo": "Biblioteca Pública Municipal Monsenhor Bruno",
+      "categoria": "patrimonio",
+      "subcategoria": "Equipamento cultural em casarão histórico",
+      "descricao": "Equipamento cultural em casarão histórico. Evidência principal: MinC e Prefeitura confirmam equipamento; estudos do sítio histórico registram o prédio.",
+      "localizacao_nome": "Rua/Av. Cel. Alexanzito, Centro",
+      "endereco": "Av. Coronel Alexanzito, 984, Centro, Aracati-CE",
+      "latitude": -4.56719,
+      "longitude": -37.773703,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "MinC e Prefeitura confirmam equipamento; estudos do sítio histórico registram o prédio",
+      "ancora_cartografica_original": "usar endereço oficial do equipamento",
+      "fonte_principal": "S20",
+      "fontes_complementares": [
+        "S21"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-010.jpg",
+        "alt": "Imagem de Biblioteca Pública Municipal Monsenhor Bruno, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps",
+      "referencia_georreferenciamento": "Place ID ChIJX6gQPgCzuQcRqz7XWa1cHdk",
+      "metodo_georreferenciamento": "trilateracao_geodesica_do_mesmo_pin_google_maps",
+      "precisao_estimada_m": 3,
+      "observacao_georreferenciamento": "Identidade e endereço associados ao mesmo Place ID do Google Maps. Par numérico obtido por trilateração geodésica a partir de retornos de distância do mesmo pin, sem confirmação visual.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "A Biblioteca Pública Municipal Monsenhor Bruno é um equipamento cultural dedicado à leitura, à pesquisa e ao acesso ao conhecimento em Aracati. Situada no centro histórico, reúne acervo bibliográfico e oferece espaços voltados ao estudo e às atividades culturais.\n\nSua presença no núcleo histórico demonstra que a preservação urbana também pode ser articulada a usos contemporâneos. Assim, a biblioteca contribui para manter o centro de Aracati como espaço vivo de educação, convivência, memória e difusão cultural."
+    },
+    {
+      "id": "PH-011",
+      "titulo": "Fábrica de Tecidos Santa Tereza",
+      "categoria": "patrimonio",
+      "subcategoria": "Patrimônio industrial e memória do trabalho",
+      "descricao": "Patrimônio industrial e memória do trabalho. Evidência principal: Roteiro municipal + estudo acadêmico do sítio histórico + rota acadêmica de paisagens culturais.",
+      "localizacao_nome": "núcleo histórico de Aracati",
+      "endereco": "Rua Dragão do Mar, Aracati-CE",
+      "latitude": -4.561177,
+      "longitude": -37.769504,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "Roteiro municipal + estudo acadêmico do sítio histórico + rota acadêmica de paisagens culturais",
+      "ancora_cartografica_original": "geocodificar pelo complexo fabril",
+      "fonte_principal": "S22",
+      "fontes_complementares": [
+        "S23"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-011.jpg",
+        "alt": "Imagem de Fábrica de Tecidos Santa Tereza, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Relatório técnico arqueológico / IPHAN",
+      "referencia_georreferenciamento": "Fábrica Santa Tereza: UTM zona 24M, E=636541,797, N=9495766,226",
+      "metodo_georreferenciamento": "conversao_utm_sad69_zona24s_para_wgs84",
+      "precisao_estimada_m": null,
+      "coordenada_origem": {
+        "sistema": "UTM, zona 24S, datum SAD69",
+        "leste_m": 636541.797,
+        "norte_m": 9495766.226
+      },
+      "observacao_georreferenciamento": "O relatório técnico fornece a coordenada UTM do ponto de referência da Fábrica Santa Tereza. A conversão para WGS84 foi realizada para uso em GeoJSON.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "Inaugurada em 1893, a Fábrica de Tecidos Santa Tereza marcou o processo de industrialização de Aracati e tornou-se uma importante referência da memória do trabalho na cidade.\n\nA atividade fabril gerou empregos e participou das transformações econômicas e sociais ocorridas entre o final do século XIX e o século XX. Mesmo após o encerramento das atividades industriais, a antiga fábrica permanece como testemunho material das mudanças tecnológicas, produtivas e trabalhistas que integraram Aracati ao processo de industrialização cearense."
+    },
+    {
+      "id": "PH-012",
+      "titulo": "Teatro Francisca Clotilde",
+      "categoria": "patrimonio",
+      "subcategoria": "Arquitetura/cultura; teatro e cineteatro",
+      "descricao": "Arquitetura/cultura; teatro e cineteatro. Evidência principal: equipamento público; contrato do IPHAN para restauro e pesquisa arqueológica.",
+      "localizacao_nome": "Av. Cel. Alexanzito, 697, Centro",
+      "endereco": "Av. Coronel Alexanzito, 697, Centro, Aracati-CE",
+      "latitude": -4.564662,
+      "longitude": -37.772608,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "equipamento público; contrato do IPHAN para restauro e pesquisa arqueológica",
+      "ancora_cartografica_original": "usar endereço oficial na geocodificação",
+      "fonte_principal": "S24",
+      "fontes_complementares": [
+        "S25"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-012.jpg",
+        "alt": "Imagem de Teatro Francisca Clotilde, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps",
+      "referencia_georreferenciamento": "Place ID ChIJ7QH2XPmyuQcROX6VFm2Wnps",
+      "metodo_georreferenciamento": "trilateracao_geodesica_do_mesmo_pin_google_maps",
+      "precisao_estimada_m": 3,
+      "observacao_georreferenciamento": "Identidade e endereço associados ao mesmo Place ID do Google Maps. Par numérico obtido por trilateração geodésica a partir de retornos de distância do mesmo pin, sem confirmação visual.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "O Teatro Francisca Clotilde ocupa uma edificação histórica do centro de Aracati e representa a continuidade de usos culturais em um imóvel de longa trajetória urbana.\n\nO prédio foi adaptado, ao longo do tempo, para atividades artísticas e culturais e passou por ações de restauro e pesquisa arqueológica acompanhadas pelo IPHAN. Atualmente, o teatro funciona como espaço de apresentações e manifestações culturais, articulando patrimônio arquitetônico, memória urbana, arqueologia e produção artística contemporânea."
+    },
+    {
+      "id": "PH-013",
+      "titulo": "Casa Ponciano",
+      "categoria": "patrimonio",
+      "subcategoria": "Comércio tradicional; memória de sociabilidade",
+      "descricao": "Comércio tradicional; memória de sociabilidade. Evidência principal: registrada no Roteiro municipal e em tese da UFC sobre paisagens culturais urbanas.",
+      "localizacao_nome": "Centro Histórico de Aracati",
+      "endereco": "Av. Coronel Alexanzito, 258, Centro, Aracati-CE",
+      "latitude": -4.560889,
+      "longitude": -37.771202,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "registrada no Roteiro municipal e em tese da UFC sobre paisagens culturais urbanas",
+      "ancora_cartografica_original": "geocodificar pelo estabelecimento",
+      "fonte_principal": "S26",
+      "fontes_complementares": [
+        "S23"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-013.jpg",
+        "alt": "Imagem de Casa Ponciano, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps",
+      "referencia_georreferenciamento": "Place ID ChIJiXDxo_yyuQcRNgik8wwIWSs",
+      "metodo_georreferenciamento": "trilateracao_geodesica_do_mesmo_pin_google_maps",
+      "precisao_estimada_m": 3,
+      "observacao_georreferenciamento": "O Google Maps identifica o estabelecimento como Mercearia Ponciano no nº 258. Par numérico obtido por trilateração geodésica do mesmo pin.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "A Casa Ponciano é uma referência da memória comercial e das formas de sociabilidade desenvolvidas em Aracati ao longo do século XX. O estabelecimento está associado ao comerciante José Ponciano da Costa e tornou-se conhecido pela comercialização de secos e molhados.\n\nA permanência da atividade e de sua memória familiar ajuda a compreender como pequenos e tradicionais estabelecimentos comerciais também participam da construção da paisagem cultural. O ponto registra práticas de trabalho, encontro e circulação cotidiana no centro histórico aracatiense."
+    },
+    {
+      "id": "PH-014",
+      "titulo": "Mercado Público (Mercado Velho)",
+      "categoria": "patrimonio",
+      "subcategoria": "Mercado histórico; abastecimento e sociabilidade",
+      "descricao": "Mercado histórico; abastecimento e sociabilidade. Evidência principal: fonte municipal + estudos acadêmicos do sítio/rota cultural.",
+      "localizacao_nome": "Centro Histórico de Aracati",
+      "endereco": null,
+      "latitude": -4.564335,
+      "longitude": -37.770845,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "fonte municipal + estudos acadêmicos do sítio/rota cultural",
+      "ancora_cartografica_original": "-4.564335, -37.770845",
+      "fonte_principal": "S27",
+      "fontes_complementares": [
+        "S21",
+        "S23"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-014.jpg",
+        "alt": "Imagem de Mercado Público (Mercado Velho), em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "Na segunda metade do século XIX, o Mercado Público consolidou-se como importante espaço de abastecimento e comércio de Aracati. Conhecido também como Mercado Velho, reuniu comerciantes, feirantes e moradores, tornando-se lugar de circulação de mercadorias e de sociabilidade cotidiana.\n\nSua arquitetura e sua localização no núcleo histórico registram a importância econômica exercida pela cidade e as transformações do comércio urbano. O mercado permanece como referência da memória do trabalho, do abastecimento e dos encontros sociais aracatienses."
+    },
+    {
+      "id": "PH-015",
+      "titulo": "Oratório/Capela do Bom Jesus dos Navegantes",
+      "categoria": "patrimonio",
+      "subcategoria": "Religiosidade ligada a pescadores/navegantes",
+      "descricao": "Religiosidade ligada a pescadores/navegantes. Evidência principal: fonte municipal e rota acadêmica; evitar fixar data original quando fontes divergem.",
+      "localizacao_nome": "Centro Histórico de Aracati",
+      "endereco": null,
+      "latitude": -4.560944,
+      "longitude": -37.770161,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C1",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "fonte municipal e rota acadêmica; evitar fixar data original quando fontes divergem",
+      "ancora_cartografica_original": "-4.560944, -37.770161",
+      "fonte_principal": "S28",
+      "fontes_complementares": [
+        "S23"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-015.jpg",
+        "alt": "Imagem de Oratório/Capela do Bom Jesus dos Navegantes, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "texto_historico": "O Oratório do Bom Jesus dos Navegantes remonta ao início do século XIX e está relacionado à devoção de pescadores e navegantes. De pequenas dimensões e linguagem colonial simples, o espaço expressa a relação histórica entre Aracati, a navegação e a religiosidade popular.\n\nRegistros locais indicam que o oratório foi reconstruído após um incêndio ocorrido no início do século XX. Sua permanência no centro histórico preserva uma memória devocional associada às águas, ao trabalho e aos deslocamentos de pessoas que dependiam da navegação."
+    },
+    {
+      "id": "PH-016",
+      "titulo": "Espaço das Artes (sobrado histórico)",
+      "categoria": "patrimonio",
+      "subcategoria": "Equipamento cultural contemporâneo em edificação histórica",
+      "descricao": "Equipamento cultural contemporâneo em edificação histórica. Evidência principal: Roteiro municipal + registros administrativos atuais confirmam o equipamento e o sobrado.",
+      "localizacao_nome": "Av. Cel. Alexanzito, Centro",
+      "endereco": "Av. Coronel Alexanzito, 757, Centro, Aracati-CE",
+      "latitude": -4.565137,
+      "longitude": -37.772906,
+      "tipo_geometria": "point",
+      "precisao_espacial": "exata",
+      "criterios": [
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "evidencia_principal": "Roteiro municipal + registros administrativos atuais confirmam o equipamento e o sobrado",
+      "ancora_cartografica_original": "geocodificar pelo equipamento municipal",
+      "fonte_principal": "S29",
+      "fontes_complementares": [
+        "S30"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-016.jpg",
+        "alt": "Imagem de Espaço das Artes (sobrado histórico), em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "fonte_georreferenciamento": "Google Maps",
+      "referencia_georreferenciamento": "Place ID ChIJtTxYu8KzuQcRxaQ7y8HOmIA",
+      "metodo_georreferenciamento": "trilateracao_geodesica_do_mesmo_pin_google_maps",
+      "precisao_estimada_m": 3,
+      "observacao_georreferenciamento": "Identidade e endereço associados ao mesmo Place ID do Google Maps. Par numérico obtido por trilateração geodésica a partir de retornos de distância do mesmo pin, sem confirmação visual.",
+      "data_georreferenciamento": "2026-09-05",
+      "texto_historico": "O Espaço das Artes funciona em um sobrado histórico do centro de Aracati e representa um uso cultural contemporâneo de uma edificação antiga. O equipamento foi criado em 2015 e reinaugurado em 2020, recebendo exposições, oficinas, cursos e outros eventos culturais.\n\nO imóvel possui trajetória associada a diferentes famílias e personagens da história local. Durante intervenções de restauração também foram identificadas pinturas murais. O espaço combina, assim, preservação arquitetônica, memória urbana e produção cultural contemporânea."
+    }
+  ],
+  "candidatos_nao_mvp": [
+    {
+      "id": "PC-017",
+      "titulo": "Aracaty Club",
+      "categoria": "patrimonio_candidato",
+      "descricao": "A existência e memória social são reconhecidas pelo município, mas o ponto é recente (1984), não possui evidência independente comparável aos demais e acrescenta pouca contribuição ao recorte histórico do MVP.",
+      "fonte_principal": "S31",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_nao_mvp",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    {
+      "id": "PC-018",
+      "titulo": "Casa Coe",
+      "categoria": "patrimonio_candidato",
+      "descricao": "O Roteiro municipal registra a casa, porém a nova busca não encontrou documentação independente suficiente para sustentar, com o mesmo padrão do inventário, as afirmações históricas específicas. Em vez de manter “pendente”, o candidato é excluído do MVP.",
+      "fonte_principal": "S32",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_nao_mvp",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    {
+      "id": "PC-019",
+      "titulo": "Casa de Beni Carvalho",
+      "categoria": "patrimonio_candidato",
+      "descricao": "O vínculo biográfico é plausível e registrado municipalmente, mas a evidência localizada não é suficiente para justificar prioridade no MVP diante de pontos mais bem documentados.",
+      "fonte_principal": "S32",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_nao_mvp",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    },
+    {
+      "id": "PC-020",
+      "titulo": "Casa de Jacques Klein",
+      "categoria": "patrimonio_candidato",
+      "descricao": "O vínculo com a família do pianista é registrado pelo Roteiro municipal, mas não foi localizada documentação independente suficiente sobre o imóvel como bem histórico-cultural prioritário para o MVP.",
+      "fonte_principal": "S32",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_nao_mvp",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      }
+    }
+  ],
+  "lendas": [
+    {
+      "id": "LD-001",
+      "titulo": "O Baile de Carnaval",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: assassinato; mortes/aparições de Anahí. Referência territorial documentada: Casa de Câmara; cadeia/quarto 7; cais/porto; rio Jaguaribe; carnaval.",
+      "tematica_documentada": "assassinato; mortes/aparições de Anahí",
+      "localizacao_nome": "Casa de Câmara; cadeia/quarto 7; cais/porto; rio Jaguaribe; carnaval",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "especifica",
+      "decisao_cartografica": "Usar a Casa de Câmara e Cadeia (mesma âncora do PH-002) como referência específica da narrativa. A ficha deve dizer que o marcador é referência territorial, não comprovação do evento sobrenatural.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, referência territorial associada à narrativa O Baile de Carnaval, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T1",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia de Aracati",
+        "tipo": "associado",
+        "observacao": "A Casa de Câmara é explicitamente associada ao conto e possui coordenada verificável. O Point representa o local associado, sem afirmar a ocorrência factual do episódio narrado."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "Segundo a narrativa registrada por Antero Pereira Filho, Anahí vivia a expectativa de um casamento que não se realizou. O abandono e o sofrimento conduzem a jovem a um episódio trágico que termina com a morte de um marinheiro e sua prisão na antiga Casa de Câmara e Cadeia, onde permanece até morrer.\n\nA história, porém, continua depois de sua morte. Anos mais tarde, durante um baile de carnaval realizado no andar superior da Casa de Câmara, Baldomero dança durante a noite com uma bela mulher desconhecida. No dia seguinte, ao consultar uma antiga edição do Jornal Jaguaribe, reconhece em uma fotografia de Anahí a mesma mulher com quem havia dançado.\n\nA narrativa transforma o antigo prédio, que reuniu espaços de festa e de prisão, em cenário onde memória, tragédia e assombração se encontram."
+    },
+    {
+      "id": "LD-002",
+      "titulo": "O Clarinete da Orquestra",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: morte no rio; música; Antonino. Referência territorial documentada: Rio Jaguaribe; conjunto do mestre Cazuza; música.",
+      "tematica_documentada": "morte no rio; música; Antonino",
+      "localizacao_nome": "Rio Jaguaribe; conjunto do mestre Cazuza; música",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar o Rio Jaguaribe como território de referência, sem marcar como exato um trecho da travessia.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência próxima ao Rio Jaguaribe no núcleo histórico",
+        "tipo": "proximo",
+        "observacao": "A fonte associa o conto ao Rio Jaguaribe, mas não determina um ponto exato da travessia. Usa-se um ponto conhecido e navegável do núcleo histórico associado ao eixo rio/porto, claramente rotulado como referência próxima."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg",
+        "https://www.scielo.br/j/elbc/a/fG8NmmPwy8gvfkQpNtRNc6j/?lang=pt"
+      ],
+      "narrativa": "Antonino era lembrado como um músico destacado do conjunto de Mestre Cazuza. Depois de uma apresentação, morreu afogado durante a travessia do rio Jaguaribe. Com sua morte, o grupo deixou de contar com o clarinete que ele tocava.\n\nNas apresentações seguintes, porém, dizia-se que o som do instrumento voltava a ser ouvido, com o estilo que todos reconheciam como sendo o de Antonino, mesmo sem existir outro clarinetista no conjunto.\n\nSegundo a tradição registrada, em madrugadas escuras ainda seria possível ouvir ao longe o som de um clarinete nas proximidades do Jaguaribe, como se a música viesse das profundezas das águas."
+    },
+    {
+      "id": "LD-003",
+      "titulo": "O Rosário do Mirinho",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: assombração; rosário roubado. Referência territorial documentada: cemitério; jogo do bicho.",
+      "tematica_documentada": "assombração; rosário roubado",
+      "localizacao_nome": "cemitério; jogo do bicho",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Aprovar para referência ampla de Aracati. Não criar ponto no Cemitério São Pedro por associação presumida.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "A fonte menciona apenas 'cemitério', sem identificar qual. Não se presume que seja o Cemitério São Pedro. O mapa usa uma referência geral de Aracati e informa que não há localização específica documentada."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "O Rosário do Mirinho é uma narrativa de assombração construída em torno do roubo de um rosário. Na memória registrada por Antero Pereira Filho, o objeto passa a estar associado a manifestações sobrenaturais e a referências do cotidiano aracatiense, especialmente o cemitério e o jogo do bicho.\n\nA história articula religiosidade popular, medo e crenças compartilhadas na cidade, transformando o rosário roubado em elemento central de uma lembrança marcada pelo sobrenatural."
+    },
+    {
+      "id": "LD-004",
+      "titulo": "No Tempo dos Pontões",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: proeiro fantasma; viajante; travessia. Referência territorial documentada: Jaguaribe; porto; hotel; Silva identifica Porto José Alves e Hotel Central/Rua Grande.",
+      "tematica_documentada": "proeiro fantasma; viajante; travessia",
+      "localizacao_nome": "Jaguaribe; porto; hotel; Silva identifica Porto José Alves e Hotel Central/Rua Grande",
+      "endereco": null,
+      "latitude": -4.563948,
+      "longitude": -37.772534,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar rio/porto/Rua Grande como referências. Não criar ponto para o Hotel Central sem identificação cartográfica independente do edifício histórico.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua Grande (Rua Coronel Alexanzito) — trecho central",
+        "tipo": "proximo",
+        "observacao": "O conto reproduzido em artigo científico informa que o viajante corre até o Hotel Central, na Rua Grande. Como o porto José Alves não possui coordenada segura nesta rodada, usa-se um ponto verificável da Rua Grande como referência territorial."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ARua_Grande_02.jpg",
+        "https://www.scielo.br/j/elbc/a/fG8NmmPwy8gvfkQpNtRNc6j/?lang=pt"
+      ],
+      "narrativa": "Antes da construção da ponte sobre o rio Jaguaribe, pessoas, mercadorias e veículos atravessavam o rio em pontões que operavam durante o dia a partir do Porto José Alves. Certa noite, um viajante vindo de Fortaleza chegou depois do horário e imaginou que teria de aguardar até a manhã seguinte.\n\nNo escuro, porém, surgiu um pontão. O proeiro aceitou levá-lo e, durante a travessia, falou sobre os mortos nas águas do Jaguaribe e sobre aquela noite especialmente sombria.\n\nAo alcançar a margem de Aracati, o viajante desembarcou e procurou dinheiro para pagar a passagem. Quando se voltou, a embarcação e o barqueiro haviam desaparecido. Assustado, correu em direção à cidade. A história preserva a memória dos antigos pontões ao transformá-los em cenário de uma travessia entre o cotidiano e o sobrenatural."
+    },
+    {
+      "id": "LD-005",
+      "titulo": "As Lavadeiras das Pedrinhas",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: assombração; lavadeiras. Referência territorial documentada: Majorlândia; Igreja Matriz.",
+      "tematica_documentada": "assombração; lavadeiras",
+      "localizacao_nome": "Majorlândia; Igreja Matriz",
+      "endereco": null,
+      "latitude": -4.56078,
+      "longitude": -37.76892,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar Majorlândia e Matriz como referências territoriais; não indicar ponto exato da aparição.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa As Lavadeiras das Pedrinhas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Igreja Matriz de Nossa Senhora do Rosário",
+        "tipo": "proximo",
+        "observacao": "Além de Majorlândia, o artigo registra que as assombrações das lavadeiras são vivenciadas diante da Igreja Matriz. A Matriz tem ponto verificável e é usada como referência territorial, não como comprovação do acontecimento."
+      },
+      "fontes_ponto_referencia": [
+        "https://mapcarta.com/pt/W643164090"
+      ],
+      "narrativa": "Antigamente, lavadeiras de Aracati percorriam longas distâncias até as Pedrinhas, localidade entre Majorlândia e Quixaba onde havia água considerada adequada para a lavagem das roupas. Carregando grandes trouxas, faziam o caminho em grupo e muitas vezes retornavam durante a noite para escapar do calor do dia.\n\nCerta madrugada, quando passavam diante da Igreja Matriz, uma das lavadeiras, Deriva, percebeu uma celebração no interior do templo. Encantada com a solenidade, entrou e permaneceu ali por algum tempo. As pessoas estavam bem vestidas, mas, apesar de conhecer muita gente da cidade, ela não reconheceu ninguém. Também parecia não ser notada pelos presentes.\n\nQuando todos começaram a deixar a igreja em silêncio, Deriva imaginou que a manhã já estivesse próxima. Ao atravessar a porta, porém, encontrou novamente a escuridão da madrugada, como se o tempo não tivesse passado. Assustada, pegou a trouxa que deixara do lado de fora e seguiu seu caminho, levando consigo a lembrança daquela estranha celebração."
+    },
+    {
+      "id": "LD-006",
+      "titulo": "O Sobrado das Corujas",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: escravidão; libertação; morte de mulher escravizada. Referência territorial documentada: Beco da Viração; Travessa Cônego; sobrados.",
+      "tematica_documentada": "escravidão; libertação; morte de mulher escravizada",
+      "localizacao_nome": "Beco da Viração; Travessa Cônego; sobrados",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Aprovar a narrativa no mapa por referência ampla de Aracati/área urbana, preservando Beco da Viração e Travessa Cônego na ficha como topônimos documentados.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "As referências urbanas são documentadas, mas o sobrado específico não foi identificado com segurança. Mantém-se T3 e usa-se uma referência geral do núcleo histórico, sem atribuir o conto a um edifício específico."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg",
+        "https://aracati.net/v3/resumo-da-evolucao-urbana/"
+      ],
+      "narrativa": "O Sobrado das Corujas associa uma antiga edificação de Aracati às memórias da escravidão. A narrativa envolve a condição de pessoas escravizadas, a libertação e a morte de uma velha mulher, colocando o sobrado e seu entorno como cenário de uma lembrança marcada pela violência do período escravista.\n\nO conto relaciona essa memória ao Beco da Viração, à Travessa Cônego e aos antigos sobrados da cidade. O elemento sobrenatural funciona, assim, como forma de fazer permanecer no presente uma história vinculada às desigualdades e aos sofrimentos do passado."
+    },
+    {
+      "id": "LD-007",
+      "titulo": "A Morte da Escrava",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: Rosária; filha; Sr. Dias. Referência territorial documentada: Rua Cel. Alexanzito; Rua do Comércio; Rua Cel. Pompeu.",
+      "tematica_documentada": "Rosária; filha; Sr. Dias",
+      "localizacao_nome": "Rua Cel. Alexanzito; Rua do Comércio; Rua Cel. Pompeu",
+      "endereco": null,
+      "latitude": -4.563948,
+      "longitude": -37.772534,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar o eixo histórico central de ruas, sem associar a narrativa a um imóvel específico.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua Grande / Rua Coronel Alexanzito — trecho central",
+        "tipo": "proximo",
+        "observacao": "A fonte cita a Rua Coronel Alexanzito e a antiga Rua do Comércio. Usa-se um ponto verificável da Rua Grande/Coronel Alexanzito como referência do eixo viário mencionado."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ARua_Grande_02.jpg"
+      ],
+      "narrativa": "A Morte da Escrava é uma narrativa ligada à experiência da escravidão em Aracati. Entre os personagens registrados estão Rosária, sua filha e o Sr. Dias, enquanto ruas do atual centro histórico aparecem como referências territoriais da história.\n\nO conto recupera a memória da violência imposta às pessoas escravizadas e transforma essa experiência em narrativa de assombração. Ruas como a Coronel Alexanzito, a antiga Rua do Comércio e a Coronel Pompeu tornam-se parte de uma paisagem onde passado, sofrimento e memória permanecem conectados."
+    },
+    {
+      "id": "LD-008",
+      "titulo": "O Perfume do Sonho",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: pilotos; morte; visagens. Referência territorial documentada: Rio Jaguaribe; hidroavião; Casa de Câmara; Cemitério São Pedro.",
+      "tematica_documentada": "pilotos; morte; visagens",
+      "localizacao_nome": "Rio Jaguaribe; hidroavião; Casa de Câmara; Cemitério São Pedro",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar o conjunto de referências verificáveis; não condensar tudo em um “local exato”.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-002.jpg",
+        "alt": "Imagem de Casa de Câmara e Cadeia de Aracati, referência territorial associada à narrativa O Perfume do Sonho, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia de Aracati",
+        "tipo": "proximo",
+        "observacao": "A Casa de Câmara é uma das referências explicitamente documentadas e possui localização verificável. O ponto representa uma das referências territoriais do conto, não um local exato do episódio."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "A narrativa recorda um episódio trágico ligado ao rio Jaguaribe: a explosão de um hidroavião envolvendo dois pilotos alemães. O acontecimento é associado às margens do rio, ao velório realizado na Casa de Câmara e ao sepultamento no Cemitério São Pedro.\n\nNa memória literária de Aracati, a morte dos pilotos passa a integrar o universo de visagens e aparições relacionado ao Jaguaribe. O rio deixa de ser apenas espaço de circulação e trabalho e aparece também como território onde a lembrança dos mortos e o imaginário sobrenatural se encontram."
+    },
+    {
+      "id": "LD-009",
+      "titulo": "O Cortejo",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: agosto; cortejo/assombração. Referência territorial documentada: Cabaré da Albertiza; Cemitério São Pedro.",
+      "tematica_documentada": "agosto; cortejo/assombração",
+      "localizacao_nome": "Cabaré da Albertiza; Cemitério São Pedro",
+      "endereco": null,
+      "latitude": -4.5556908,
+      "longitude": -37.7663104,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar o Cemitério São Pedro como referência territorial verificável; manter Cabaré da Albertiza apenas como referência textual.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua São Pedro — referência junto ao Cemitério Municipal São Pedro",
+        "tipo": "proximo",
+        "observacao": "O Cemitério São Pedro é explicitamente citado. Como a fonte cartográfica disponível confirma o cemitério na Rua São Pedro e fornece ponto da própria rua, esse Point é tratado como referência próxima ao cemitério, não como centroide exato do equipamento."
+      },
+      "fontes_ponto_referencia": [
+        "https://www.waze.com/pt-BR/live-map/directions/cemiterio-municipal-sao-pedro-r.-sao-pedro-aracati?to=place.w.211158746.2111784073.2178596",
+        "https://www.qualocep.com/busca-cep/62800256/"
+      ],
+      "narrativa": "O Cortejo está associado ao antigo imaginário aracatiense sobre o mês de agosto, tradicionalmente lembrado nas narrativas locais como um período propício às assombrações.\n\nA história relaciona esse universo ao Cabaré da Albertiza e ao Cemitério São Pedro. Esses lugares integram a memória territorial do conto e ajudam a transformar o cortejo e a atmosfera noturna da cidade em elementos de uma narrativa marcada pela proximidade entre os vivos e a lembrança dos mortos."
+    },
+    {
+      "id": "LD-010",
+      "titulo": "Mestre Romeiro",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: morte do carpinteiro; caixões. Referência territorial documentada: Matriz; sino; sons.",
+      "tematica_documentada": "morte do carpinteiro; caixões",
+      "localizacao_nome": "Matriz; sino; sons",
+      "endereco": null,
+      "latitude": -4.56078,
+      "longitude": -37.76892,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Corrigir “precisão exata” para territorial. Matriz pode funcionar como âncora associada ao sino; não afirmar que a oficina ou o fenômeno ficavam na Matriz.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa Mestre Romeiro, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Igreja Matriz de Nossa Senhora do Rosário",
+        "tipo": "proximo",
+        "observacao": "A Matriz é documentada por causa do sino na narrativa. O marcador é referência territorial da Matriz e não deve ser descrito como localização exata da oficina ou do acontecimento."
+      },
+      "fontes_ponto_referencia": [
+        "https://mapcarta.com/pt/W643164090"
+      ],
+      "narrativa": "Mestre Romeiro era um velho carpinteiro conhecido em Aracati pela fabricação de caixões. Em uma época em que o sino da Matriz anunciava mortes, o som de seu martelo também passou a ser associado, pela população, à preparação dos funerais.\n\nQuando Romeiro morreu, esse tipo de trabalho já começava a desaparecer com a chegada das funerárias. Na noite seguinte ao seu enterro, entretanto, pessoas que passaram pela Travessa da Cacimba, a caminho do mercado ou da missa da madrugada, disseram ouvir o bater contínuo de um martelo vindo da antiga oficina.\n\nParecia, segundo a narrativa, que o velho mestre continuava trabalhando na confecção de mais um caixão."
+    },
+    {
+      "id": "LD-011",
+      "titulo": "O Passeio da Moça Loura",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: assombração urbana; ruas/pessoas. Referência territorial documentada: ruas; Cemitério São Pedro; Igreja Matriz.",
+      "tematica_documentada": "assombração urbana; ruas/pessoas",
+      "localizacao_nome": "ruas; Cemitério São Pedro; Igreja Matriz",
+      "endereco": null,
+      "latitude": -4.56078,
+      "longitude": -37.76892,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar Matriz/Cemitério/centro como referências, sem eleger uma coordenada de aparição.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-007.jpg",
+        "alt": "Imagem de Igreja Matriz de Nossa Senhora do Rosário, referência territorial associada à narrativa O Passeio da Moça Loura, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Igreja Matriz de Nossa Senhora do Rosário",
+        "tipo": "proximo",
+        "observacao": "A Igreja Matriz é uma das referências explicitamente citadas e possui ponto verificável. O marcador representa uma referência do percurso narrativo, não um ponto exato da aparição."
+      },
+      "fontes_ponto_referencia": [
+        "https://mapcarta.com/pt/W643164090"
+      ],
+      "narrativa": "O Passeio da Moça Loura apresenta uma aparição feminina ligada às ruas do centro de Aracati. A figura da moça passa a integrar o imaginário de assombração da cidade, aparecendo em uma narrativa relacionada aos deslocamentos noturnos e aos espaços históricos aracatienses.\n\nEntre as referências territoriais documentadas para o conto estão a Igreja Matriz, o Cemitério São Pedro e as ruas do centro. A narrativa é também analisada pelos estudos sobre a obra de Antero Pereira Filho em diálogo com questões de gênero e violência presentes na memória social."
+    },
+    {
+      "id": "LD-012",
+      "titulo": "O Beco do Barão",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: portal dos amantes; Barão de Messejana. Referência territorial documentada: Rua Grande; sobrado; beco; trilho.",
+      "tematica_documentada": "portal dos amantes; Barão de Messejana",
+      "localizacao_nome": "Rua Grande; sobrado; beco; trilho",
+      "endereco": null,
+      "latitude": -4.566806,
+      "longitude": -37.773421,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar Rua Grande como eixo territorial. Não escolher um sobrado específico sem fonte nominal.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-005.jpg",
+        "alt": "Imagem de sobrado histórico associado ao Museu Jaguaribano e ao entorno do Beco do Barão, referência territorial associada à narrativa O Beco do Barão, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Instituto do Museu Jaguaribano / Beco do Barão",
+        "tipo": "proximo",
+        "observacao": "Fontes culturais e acadêmicas situam o Beco do Barão junto ao Museu Jaguaribano. Usa-se a geolocalização oficial do museu como referência próxima e reproduzível."
+      },
+      "fontes_ponto_referencia": [
+        "https://visite.museus.gov.br/instituicoes/instituto-do-museu-jaguaribano/",
+        "https://patrimonioparatodosaracati.wordpress.com/2010/12/12/o-beco-do-barao-e-a-lenda-dos-casais-sumidos/"
+      ],
+      "narrativa": "Segundo a narrativa, duas pessoas de famílias importantes viviam em sobrados separados por um estreito beco e mantinham um romance que precisava permanecer escondido. Para afastar curiosos e permitir os encontros, espalhou-se a história de que o beco se fechava depois da meia-noite e engolia quem tentasse atravessá-lo.\n\nUm trilho de ferro foi colocado ligando os dois sobrados. Publicamente, dizia-se que ele impediria que o beco se fechasse. Na história registrada por Antero Pereira Filho, porém, sua verdadeira função era permitir que o homem alcançasse discretamente a residência de sua amada.\n\nO lugar permaneceu associado à memória dos amantes e ao imaginário fantástico que deu origem ao chamado Beco do Barão."
+    },
+    {
+      "id": "LD-013",
+      "titulo": "O Rosto do Baú",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: visagem; procissão; sociabilidade/rumor. Referência territorial documentada: sociabilidades na cidade.",
+      "tematica_documentada": "visagem; procissão; sociabilidade/rumor",
+      "localizacao_nome": "sociabilidades na cidade",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Representar em agrupamento/referência geral de Aracati.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "A fonte não determina um lugar específico. Usa-se um ponto geral do núcleo histórico apenas para acesso cartográfico à narrativa."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "O Rosto do Baú é uma narrativa marcada por visagens, comentários que circulam entre moradores e pela presença de uma procissão no imaginário da história.\n\nO conto relaciona o sobrenatural às formas de sociabilidade de Aracati: aquilo que alguém vê ou acredita ter visto passa de pessoa para pessoa e ganha novas dimensões à medida que circula pela cidade. O rosto associado ao baú torna-se, assim, parte de uma memória coletiva construída entre aparições, medo e relatos compartilhados."
+    },
+    {
+      "id": "LD-014",
+      "titulo": "A Botija da Cruz das Almas",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: botija; riqueza escondida. Referência territorial documentada: praça/Cruz das Almas; Rio Jaguaribe.",
+      "tematica_documentada": "botija; riqueza escondida",
+      "localizacao_nome": "praça/Cruz das Almas; Rio Jaguaribe",
+      "endereco": null,
+      "latitude": -4.570617,
+      "longitude": -37.774423,
+      "tipo_geometria": "point",
+      "precisao_espacial": "especifica",
+      "decisao_cartografica": "Usar Cruz das Almas (PH-006) como âncora específica; o Rio Jaguaribe permanece referência complementar.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": "/images/patrimonios/ph-006.jpg",
+        "alt": "Imagem de Cruz das Almas, referência territorial associada à narrativa A Botija da Cruz das Almas, em Aracati.",
+        "credito": "Roteiro Virtual do Aracati / Secretaria de Cultura",
+        "fonte": "https://roteirovirtual.aracati.ce.gov.br/",
+        "licenca": null
+      },
+      "nivel_representacao": "T1",
+      "ponto_referencia": {
+        "nome": "Praça Cruz das Almas",
+        "tipo": "associado",
+        "observacao": "A Cruz das Almas é explicitamente associada à narrativa. A coordenada já foi validada no próprio projeto (PH-006/T12); a Prefeitura confirma a Praça Cruz das Almas na Rua Cel. Alexandrino."
+      },
+      "fontes_ponto_referencia": [
+        "https://aracati.ce.gov.br/informa/78/prefeitura-do-aracati-reinaugura-a-pra-a-cruz-das-"
+      ],
+      "narrativa": "A Botija da Cruz das Almas recupera o motivo das botijas e das riquezas escondidas, muito presente no imaginário popular. A narrativa é territorialmente relacionada à Praça Cruz das Almas e ao rio Jaguaribe.\n\nNa história, a busca ou a lembrança da botija aproxima o desejo pela riqueza de um ambiente marcado pelo sobrenatural. A Cruz das Almas deixa de ser apenas um ponto da cidade e passa a compor uma narrativa sobre memória, riqueza e assombração."
+    },
+    {
+      "id": "LD-015",
+      "titulo": "A Moça do Castelo (Rigolleto)",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: Anacleto; Rosário; Adeodato. Referência territorial documentada: “teatro do macabro” (descrição sociocultural do quadro).",
+      "tematica_documentada": "Anacleto; Rosário; Adeodato",
+      "localizacao_nome": "“teatro do macabro” (descrição sociocultural do quadro)",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Representar apenas no agrupamento geral de Aracati; não usar o Teatro Francisca Clotilde ou outro edifício por inferência.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "A auditoria não identifica um edifício específico de forma defensável. O ponto serve apenas como referência geral de Aracati."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "A Moça do Castelo, também identificada nas fontes pela referência a Rigolleto, reúne personagens como Anacleto, Rosário e Adeodato em uma narrativa marcada pelo medo e por acontecimentos descritos pelos estudos como um verdadeiro teatro do macabro.\n\nO conto está associado ao Castelo e integra o conjunto de histórias em que Antero Pereira Filho aproxima memória urbana, relações humanas e elementos sobrenaturais. Estudos sobre a obra também relacionam a narrativa a questões de gênero e violência."
+    },
+    {
+      "id": "LD-016",
+      "titulo": "O Lobisomem da Várzea da Matriz",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: ciúmes e morte; lobisomem. Referência territorial documentada: Canoa Quebrada; Aracati.",
+      "tematica_documentada": "ciúmes e morte; lobisomem",
+      "localizacao_nome": "Canoa Quebrada; Aracati",
+      "endereco": null,
+      "latitude": -4.52703,
+      "longitude": -37.69773,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar Canoa Quebrada e Aracati como referências territoriais, sem ponto exato do episódio.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Símbolo da Lua e da Estrela — Canoa Quebrada",
+        "tipo": "proximo",
+        "observacao": "O artigo afirma que a narrativa envolve cenas em Canoa Quebrada e Aracati. Usa-se um ponto reconhecível de Canoa Quebrada como referência territorial; ele não representa o local exato de qualquer cena."
+      },
+      "fontes_ponto_referencia": [
+        "https://mapcarta.com/pt/N4315073056"
+      ],
+      "narrativa": "O Lobisomem da Várzea da Matriz recupera uma das figuras mais conhecidas do imaginário popular: o homem que assume a forma de lobisomem.\n\nNa narrativa registrada em Aracati, essa presença sobrenatural é associada a episódios de ciúme e morte e estabelece conexões entre Canoa Quebrada e a cidade. A Várzea da Matriz integra a memória territorial do conto, enquanto estudos sobre a obra relacionam a história também às consequências do alcoolismo."
+    },
+    {
+      "id": "LD-017",
+      "titulo": "A Botija da Lagoa Nova",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: fantasma branco; botija. Referência territorial documentada: Lagoa Nova.",
+      "tematica_documentada": "fantasma branco; botija",
+      "localizacao_nome": "Lagoa Nova",
+      "endereco": null,
+      "latitude": -4.6130556,
+      "longitude": -37.965,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar Lagoa Nova como referência de localidade, não como coordenada exata da botija/aparição.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Lagoa Nova — referência territorial publicada pelo SGB",
+        "tipo": "proximo",
+        "observacao": "O SGB publica coordenadas geográficas para uma ocorrência denominada Lagoa Nova em Aracati. O ponto é usado como referência territorial da localidade, não como posição exata da botija ou da narrativa."
+      },
+      "fontes_ponto_referencia": [
+        "https://rigeo.sgb.gov.br/bitstream/doc/8709/1/Avaliacao_Jaguaribe.pdf"
+      ],
+      "narrativa": "A Botija da Lagoa Nova reúne dois elementos recorrentes das histórias de assombração: a memória de uma botija e a aparição de uma figura branca.\n\nA Lagoa Nova constitui a principal referência territorial da narrativa. Nesse espaço, a lembrança de riquezas escondidas e a presença de um fantasma branco se combinam, fazendo do lugar parte do imaginário sobrenatural registrado nas histórias de Aracati."
+    },
+    {
+      "id": "LD-018",
+      "titulo": "Assombração",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: sons da morte. Referência territorial documentada: Fortim.",
+      "tematica_documentada": "sons da morte",
+      "localizacao_nome": "Fortim",
+      "endereco": null,
+      "latitude": null,
+      "longitude": null,
+      "tipo_geometria": "area_ref",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Manter catalogada e documentalmente validada, mas não publicar na camada das 25 narrativas de Aracati.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_nao_mvp",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": null,
+      "ponto_referencia": null,
+      "fontes_ponto_referencia": [],
+      "narrativa": "Assombração é uma narrativa associada ao município de Fortim e construída principalmente em torno de sons relacionados à morte.\n\nEm vez de depender apenas de uma figura visível, o medo surge pela experiência de ouvir aquilo que não se consegue explicar. A narrativa integra, assim, a paisagem sonora ao imaginário sobrenatural da região, associando memória, morte e assombração."
+    },
+    {
+      "id": "LD-019",
+      "titulo": "Sufraia",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: lobisomem. Referência territorial documentada: Maloca.",
+      "tematica_documentada": "lobisomem",
+      "localizacao_nome": "Maloca",
+      "endereco": null,
+      "latitude": -4.5755278,
+      "longitude": -37.7694502,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar o bairro Maloca como referência territorial; não usar o endereço do equipamento como local do lobisomem.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua dos Franceses / Centro Vida — referência para a região da Maloca",
+        "tipo": "proximo",
+        "observacao": "A Prefeitura situa o Centro Vida na Rua dos Franceses, sem número, Maloca. A coordenada disponível é da Rua dos Franceses e funciona como ponto próximo da região mencionada."
+      },
+      "fontes_ponto_referencia": [
+        "https://aracati.ce.gov.br/informa/640/centro-vida-vai-promover-inclus-o-social-por-meio-",
+        "https://www.qualocep.com/busca-cep/62800604/"
+      ],
+      "narrativa": "Sufraia era descrito como um homem de aparência assustadora que, segundo a narrativa, transformava-se em um bezerro preto nas noites de lobisomem, nas proximidades da Maloca e da Várzea Preta.\n\nEm certa ocasião, ferido e escondido entre carnaúbas, perdeu a noção do tempo enquanto aguardava voltar à forma humana. Pela tradição narrada por Antero Pereira Filho, o lobisomem precisava desfazer a transformação antes da meia-noite e antes do canto do galo. Sufraia não conseguiu.\n\nAo tentar retornar para casa, sofreu uma transformação definitiva e tornou-se uma figura híbrida, parte humana e parte animal. Desde então teria vagado por currais e monturos nos arredores de Aracati, assustando moradores e temendo até mesmo o latido dos cães."
+    },
+    {
+      "id": "LD-020",
+      "titulo": "O Castigo da Oração",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: almas do outro mundo. Referência territorial documentada: Várzea da Matriz.",
+      "tematica_documentada": "almas do outro mundo",
+      "localizacao_nome": "Várzea da Matriz",
+      "endereco": null,
+      "latitude": -4.5567605,
+      "longitude": -37.7621918,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar Várzea da Matriz como referência territorial, sem ponto exato.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua Herisberto/Heriberto Cavalcante Porto — UBS Várzea da Matriz",
+        "tipo": "proximo",
+        "observacao": "A Prefeitura confirma a UBS Várzea da Matriz nessa rua; a coordenada disponível para a via é usada como referência territorial do bairro."
+      },
+      "fontes_ponto_referencia": [
+        "https://aracati.ce.gov.br/unidadesaude.php?id=16",
+        "https://www.qualocep.com/busca-cep/62800420/"
+      ],
+      "narrativa": "O Castigo da Oração é uma narrativa relacionada à Várzea da Matriz e à presença de almas do outro mundo.\n\nA oração, normalmente vinculada à devoção e à proteção, aparece no conto integrada a uma experiência sobrenatural. A história aproxima religiosidade popular, medo e memória, fazendo da Várzea da Matriz um dos espaços simbólicos das assombrações registradas em Aracati."
+    },
+    {
+      "id": "LD-021",
+      "titulo": "O Galo Despertador",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: canto do galo; tempo. Referência territorial documentada: casa; tempo.",
+      "tematica_documentada": "canto do galo; tempo",
+      "localizacao_nome": "casa; tempo",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Representar no agrupamento geral de Aracati.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "A fonte não identifica a casa. Não se escolhe um imóvel arbitrário; usa-se uma referência geral de Aracati."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "O Galo Despertador constrói seu elemento de estranhamento a partir do canto de um galo e de sua relação com a casa e com a passagem do tempo.\n\nUm som cotidiano ganha significado inquietante quando rompe a normalidade esperada. A narrativa transforma, assim, um elemento comum da vida doméstica em sinal de mistério, aproximando tempo, memória e assombração."
+    },
+    {
+      "id": "LD-022",
+      "titulo": "Velho Cabeleira",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: lobisomem. Referência territorial documentada: Várzea da Matriz.",
+      "tematica_documentada": "lobisomem",
+      "localizacao_nome": "Várzea da Matriz",
+      "endereco": null,
+      "latitude": -4.5567605,
+      "longitude": -37.7621918,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar Várzea da Matriz como referência territorial, sem ponto exato.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua Herisberto/Heriberto Cavalcante Porto — UBS Várzea da Matriz",
+        "tipo": "proximo",
+        "observacao": "A narrativa é vinculada à Várzea da Matriz. Usa-se um ponto verificável dentro do bairro como referência territorial, sem indicar local exato."
+      },
+      "fontes_ponto_referencia": [
+        "https://aracati.ce.gov.br/unidadesaude.php?id=16",
+        "https://www.qualocep.com/busca-cep/62800420/"
+      ],
+      "narrativa": "Velho Cabeleira integra o conjunto de narrativas aracatienses relacionadas ao lobisomem. A Várzea da Matriz aparece como principal referência territorial da história.\n\nA figura do homem transformado em criatura sobrenatural aproxima uma crença bastante difundida no imaginário popular da paisagem concreta de Aracati. Dessa forma, a Várzea passa a fazer parte não apenas da geografia da cidade, mas também de sua memória fantástica."
+    },
+    {
+      "id": "LD-023",
+      "titulo": "O Garupeiro",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: assombração. Referência territorial documentada: CERNE; Centro; Rio Jaguaribe.",
+      "tematica_documentada": "assombração",
+      "localizacao_nome": "CERNE; Centro; Rio Jaguaribe",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar Centro + Rio Jaguaribe; manter CERNE como referência textual, sem ponto próprio.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência do centro próximo ao eixo do Rio Jaguaribe",
+        "tipo": "proximo",
+        "observacao": "A fonte informa Centro e Rio Jaguaribe, mas não fornece ponto exato. Usa-se uma referência navegável do núcleo histórico ligada ao eixo rio/porto; CERNE permanece apenas na descrição textual até localização inequívoca."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "O Garupeiro apresenta uma assombração relacionada ao universo das motocicletas e aos deslocamentos pela cidade. Estudos sobre a obra descrevem a presença de uma espécie de moto infernal e também registram uma manifestação fantasmagórica associada à ponte.\n\nEntre as referências territoriais do conto aparecem o antigo CERNE, o centro de Aracati e o rio Jaguaribe. A narrativa transforma o deslocamento por esses espaços em uma experiência de medo, na qual o cotidiano e o sobrenatural passam a ocupar o mesmo caminho."
+    },
+    {
+      "id": "LD-024",
+      "titulo": "O Ofício",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: mistério. Referência territorial documentada: Centro da cidade.",
+      "tematica_documentada": "mistério",
+      "localizacao_nome": "Centro da cidade",
+      "endereco": null,
+      "latitude": -4.563948,
+      "longitude": -37.772534,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Usar Centro Histórico como referência territorial.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Rua Grande / Rua Coronel Alexanzito — trecho central",
+        "tipo": "proximo",
+        "observacao": "A fonte situa a narrativa na região central. A Rua Grande/Coronel Alexanzito é um eixo histórico central com coordenada verificável e funciona como referência territorial."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ARua_Grande_02.jpg"
+      ],
+      "narrativa": "O Ofício é uma narrativa de mistério ambientada no centro de Aracati.\n\nO próprio caráter enigmático da história faz do espaço urbano parte fundamental da experiência narrativa. O centro histórico, com suas ruas, edificações e memórias acumuladas, funciona como cenário para um acontecimento cuja natureza permanece associada ao inexplicável e ao universo das assombrações."
+    },
+    {
+      "id": "LD-025",
+      "titulo": "Oração do Soldado 33",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: ritual; oração. Referência territorial documentada: Centro da cidade; Várzea Preta.",
+      "tematica_documentada": "ritual; oração",
+      "localizacao_nome": "Centro da cidade; Várzea Preta",
+      "endereco": null,
+      "latitude": -4.61632,
+      "longitude": -37.83362,
+      "tipo_geometria": "point",
+      "precisao_espacial": "territorial",
+      "decisao_cartografica": "Representar Centro + Várzea Preta como referências territoriais, sem ponto exato do ritual.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T2",
+      "ponto_referencia": {
+        "nome": "Vila Cabreiro — referência próxima ao Sítio Várzea Preta",
+        "tipo": "proximo",
+        "observacao": "O IQUAMA identifica Sítio Várzea Preta como localizado em Vila Cabreiro. Como não há coordenada pontual publicada do sítio, usa-se a coordenada verificável de Cabreiro como referência próxima."
+      },
+      "fontes_ponto_referencia": [
+        "https://iquama.aracati.ce.gov.br/publicacaoambiental/3122",
+        "https://mapcarta.com/pt/19154710"
+      ],
+      "narrativa": "Oração do Soldado 33 é uma narrativa construída em torno de uma oração e de um ritual.\n\nO centro da cidade e a Várzea Preta aparecem como referências territoriais do conto. A história aproxima prática ritual, crença e sobrenatural, incorporando esses espaços de Aracati a uma memória em que orações também podem adquirir significados misteriosos e inquietantes."
+    },
+    {
+      "id": "LD-026",
+      "titulo": "O Choro do Bebê",
+      "categoria": "lenda",
+      "subcategoria": "narrativa literária/memorialística",
+      "descricao": "Narrativa do corpus Histórias de Assombração do Aracati. Temática documentada: crianças mortas; sons. Referência territorial documentada: Aracati.",
+      "tematica_documentada": "crianças mortas; sons",
+      "localizacao_nome": "Aracati",
+      "endereco": null,
+      "latitude": -4.562544,
+      "longitude": -37.772089,
+      "tipo_geometria": "point",
+      "precisao_espacial": "municipal",
+      "decisao_cartografica": "Representar no agrupamento geral de Aracati.",
+      "fonte_principal": "S02",
+      "fontes_complementares": [
+        "S01"
+      ],
+      "status_publicacao": "validado_incluir",
+      "imagem": {
+        "src": null,
+        "alt": null,
+        "credito": null,
+        "fonte": null,
+        "licenca": null
+      },
+      "nivel_representacao": "T3",
+      "ponto_referencia": {
+        "nome": "Casa de Câmara e Cadeia — referência geral do núcleo histórico de Aracati",
+        "tipo": "geral",
+        "observacao": "A documentação associa a narrativa somente a Aracati. O ponto é deliberadamente geral e não deve ser interpretado como localização específica."
+      },
+      "fontes_ponto_referencia": [
+        "https://commons.wikimedia.org/wiki/File%3ACasa_de_C%C3%A2mara_e_Cadeia_de_Aracati_-_fachada_frontal.jpg"
+      ],
+      "narrativa": "O Choro do Bebê relaciona o som de crianças à memória da morte e às dificuldades enfrentadas pela população de Aracati em períodos marcados por seca, fome e miséria.\n\nO choro, um som normalmente associado à vida e à infância, assume na narrativa um sentido perturbador. A história transforma essa lembrança em manifestação do sobrenatural e, ao mesmo tempo, preserva ecos de experiências sociais dolorosas presentes na memória local."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+T01 PASSOU — JSON válido.
+T02 PASSOU — 2 IDs únicos.
+T03 PASSOU — categorias controladas válidas.
+T04 PASSOU — coordenadas dos registros aptos são válidas e seguem [longitude, latitude].
+T05 PASSOU — regra de publicação respeitada.
+T06 PASSOU — campos mínimos de rastreabilidade presentes.
+
+AVISOS ESPERADOS
+- T05: LD-001 permanece pendente e sem geometria; corretamente não deverá aparecer no mapa.
+
+RESULTADO: 2 registros analisados; 0 erros.

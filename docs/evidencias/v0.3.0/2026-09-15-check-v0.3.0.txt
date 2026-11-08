@@ -1,0 +1,36 @@
+
+> rota-das-lendas@0.3.0 check
+> npm run test:data && npm run build
+
+
+> rota-das-lendas@0.3.0 test:data
+> node scripts/validar-dados.mjs
+
+PASSOU — T01: JSON canônico contém 16 patrimônios, 4 candidatos não-MVP e 26 lendas.
+PASSOU — T02: IDs do JSON canônico são únicos e preenchidos.
+PASSOU — T03: dados.geojson é FeatureCollection com 42 Features.
+PASSOU — T04: categorias do GeoJSON estão controladas em patrimonio/lenda.
+PASSOU — T05: GeoJSON contém 16 patrimônios e 26 lendas catalogadas.
+PASSOU — T06: 16/16 patrimônios possuem geometria Point numericamente válida.
+PASSOU — T07: lendas possuem Point válido ou geometry=null, sem coordenada fabricada.
+PASSOU — T08: estados finais de publicação seguem a Base Validada v2.0.
+PASSOU — T09: todos os códigos de fonte do GeoJSON existem no catálogo S01–S32.
+PASSOU — T10: JSON canônico e GeoJSON possuem os mesmos 42 IDs de produção.
+RESUMO — 42 Features; 16/16 patrimônios mapeáveis; 1/26 lendas atualmente com Point publicável.
+PASSOU — T11: checkpoint patrimonial atingido: 16/16 patrimônios mapeáveis.
+PASSOU — T12: PH-006 — Cruz das Almas usa a coordenada corrigida -4.570617, -37.774423.
+RESULTADO: base digital v2.1.1 válida para o incremento atual do MVP.
+
+> rota-das-lendas@0.3.0 build
+> vite build
+
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 19 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.68 kB │ gzip:   0.42 kB
+dist/assets/index-DKzPBaZc.css   26.22 kB │ gzip:   9.55 kB
+dist/assets/index-DMmshTdM.js   349.19 kB │ gzip: 106.41 kB
+
+✓ built in 275ms
